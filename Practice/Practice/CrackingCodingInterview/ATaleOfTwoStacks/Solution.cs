@@ -1,17 +1,75 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
 
-namespace Practice.CrackingCodingInterview.ATaleOfTwoStacks
-{
-	public class Solution
+	namespace Practice.CrackingCodingInterview.ATaleOfTwoStacks
 	{
-		static void Main(String[] args)
+		class Solution
 		{
-			Queue q1 = new Queue();
-			Queue q2 = new Queue();
+			class MyQueue<T>
+			{
+				Stack<T> s1 = new Stack<T>();
+				Stack<T> s2 = new Stack<T>();
+
+				public T peek()
+				{
+					//check for null
+					if (s2.Count == 0)
+					{
+						while (s1.Count > 0)
+						{
+							s2.Push(s1.Pop());
+						}
+					}
+					return s2.Peek();
+				}
+				public void enqueue(T t)
+				{
+					s1.Push(t);
+				}
+				public T dequeue()
+				{
+					//check for null
+					if (s2.Count == 0)
+					{
+						while (s1.Count > 0)
+						{
+							s2.Push(s1.Pop());
+						}
+					}
+					return s2.Pop();
+				}
+			}
+
+
+			static void Main(String[] args)
+			{
+				MyQueue<int> q = new MyQueue<int>();
+				int n = Convert.ToInt32(Console.ReadLine());
+
+				for (int i = 0; i < n; i++)
+				{
+					string[] sr = Console.ReadLine().Split();
+					int[] opr = Array.ConvertAll(sr, int.Parse);
+					if (opr[0] == 1)
+					{
+						//enqueue
+						q.enqueue(opr[1]);
+					}
+					if (opr[0] == 2)
+					{
+						//dequeue
+						q.dequeue();
+					}
+					if (opr[0] == 3)
+					{
+						//peek
+						Console.WriteLine(q.peek());
+					}
+				}
+
+				Console.ReadLine();
+			}
 		}
 	}
-}
