@@ -13,24 +13,56 @@ namespace Practice.CrackingCodingInterview.BubbleSort
 			int n = Convert.ToInt32(Console.ReadLine());
 			string[] a_temp = Console.ReadLine().Split(' ');
 			int[] a = Array.ConvertAll(a_temp, Int32.Parse);
-			Sort(a);
-		}
+			//Sort(a);
 
-		public static void Sort(int[] a)
-		{
-			for (int i = 0; i < a.Length; i++)
+			bool isSorted = false;
+			int numSwaps = 0;
+			int arrayLength = a.Length - 1;
+			while (!isSorted)
 			{
-				for (int j = i; j < a.Length; j++)
+				isSorted = true;
+				for (int i = 0; i < arrayLength; i++)
 				{
-					if (a[j] > a[j + 1])
+					if (a[i] > a[i + 1])
 					{
-						//swap ascending
-						int temp = a[j];
-						a[j] = a[j + 1];
-						a[j + 1] = temp;
+						//swap
+						int temp = a[i];
+						a[i] = a[i + 1];
+						a[i + 1] = temp;
+						numSwaps = numSwaps + 1;
+						isSorted = false;
 					}
 				}
+				arrayLength = arrayLength - 1;
 			}
+			Console.WriteLine("Array is sorted in " + numSwaps + " swaps.");
+			Console.WriteLine("First Element: " + a[0]);
+			Console.WriteLine("Last Element: " + a[a.Length-1]);
+			Console.ReadLine();
 		}
+
+		//public static void Sort(int[] a)
+		//{
+		//	bool isSorted = false;
+		//	int numSwaps = 0;
+		//	int arrayLength = a.Length - 1;
+		//	while (!isSorted)
+		//	{
+		//		isSorted = true;
+		//		for(int i = 0; i < arrayLength; i++)
+		//		{
+		//			if (a[i] > a[i + 1])
+		//			{
+		//				//swap
+		//				int temp = a[i];
+		//				a[i] = a[i + 1];
+		//				a[i + 1] = temp;
+		//				numSwaps = numSwaps + 1;
+		//				isSorted = false;
+ 	//				}
+		//		}
+		//		arrayLength = arrayLength - 1;
+		//	}
+		//}
 	}
 }
