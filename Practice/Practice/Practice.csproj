@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Practice.CrackingCodingInterview.BubbleSort.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -74,6 +74,7 @@
     <Compile Include="CrackingCodingInterview\BubbleSort\Solution.cs" />
     <Compile Include="CrackingCodingInterview\DetectACycle\Solution.cs" />
     <Compile Include="CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
+    <Compile Include="CrackingCodingInterview\IceCreamParlor\Solution.cs" />
     <Compile Include="CrackingCodingInterview\Making Anagrams\Solution.cs" />
     <Compile Include="CrackingCodingInterview\Ransom Notes\Solution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
