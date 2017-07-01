@@ -15,7 +15,7 @@ namespace Practice.CrackingCodingInterview.Ransom_Notes
 			int n = Convert.ToInt32(tokens_m[1]);
 
 			string[] magazine = Console.ReadLine().Split(' ');
-			string[] ransom = Console.ReadLine().Split(' ');
+			string[] ransom = Console.ReadLine().Split(' '); ;
 
 			Hashtable ht = new Hashtable();
 			foreach (var i in magazine)
