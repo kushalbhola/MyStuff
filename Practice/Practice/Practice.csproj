@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
+    <StartupObject>Practice.HackerEarth.MicroMini</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -72,11 +72,13 @@
     <Compile Include="CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
     <Compile Include="CrackingCodingInterview\BalancedBrackets\Solution.cs" />
     <Compile Include="CrackingCodingInterview\BubbleSort\Solution.cs" />
+    <Compile Include="CrackingCodingInterview\CheckBST\Solution.cs" />
     <Compile Include="CrackingCodingInterview\DetectACycle\Solution.cs" />
     <Compile Include="CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
     <Compile Include="CrackingCodingInterview\IceCreamParlor\Solution.cs" />
     <Compile Include="CrackingCodingInterview\Making Anagrams\Solution.cs" />
     <Compile Include="CrackingCodingInterview\Ransom Notes\Solution.cs" />
+    <Compile Include="HackerEarth\MicroMini.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
