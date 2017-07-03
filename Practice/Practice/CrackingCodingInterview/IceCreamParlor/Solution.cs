@@ -19,53 +19,48 @@ namespace Practice.CrackingCodingInterview.IceCreamParlor
 				//int[] a = Array.ConvertAll(a_temp, Int32.Parse);
 				int money = 4;
 				int[] a = { 1, 4, 5, 3, 2 };
-				Array.Sort(a);
-				for (int i = 0; i < a.Length; i++)
+				int[] sortedMenu = (int[])a.Clone();
+				Array.Sort(sortedMenu);
+				for (int i = 0; i < sortedMenu.Length; i++)
 				{
-					Console.WriteLine(a[i]);
-					//int var = a[i];
-					//look for the money - var in the array 
-					int val = check(a, 0, a.Length - 1, money-a[i]);
-					if(val != -1)
+					int searchVal = money - sortedMenu[i];
+					bool flag = check(sortedMenu, 0, sortedMenu.Length - 1, searchVal, i);
+					if(flag) 
 					{
-						Console.WriteLine(a[i] + " " + a[val]);
+						int val1 = indexof(a, a[i]);
+						int val2 = indexof(a, searchVal);
+						if (val2 != -1)
+						{
+							Console.WriteLine(val1  + " " + val2);
+						}
 					}
 					
 				}
 				Console.ReadLine();
 			}
-			
 		}
-
-		static int check(int[] a, int first, int last, int searchVal)
+		static int indexof(int[] a, int val)
+		{
+			for(int i = 0; i < a.Length; i++)
+			{
+				if (a[i] == val) return i+1;
+			}
+			return -1;
+		}
+		static bool check(int[] a, int first, int last, int searchVal, int initial)
 		{
 			if (first <= last)
 			{
 				int mid = (int)first + last / 2;
-				if (a[mid] == searchVal)
-					return mid;
+				if (a[mid] == searchVal && mid != initial)
+					return true;
 				else if (a[mid] > searchVal)
-					return check(a, first, mid, searchVal);
-				else								// (a[mid] < searchVal)
-					return check(a, mid + 1, last, searchVal);
+					return check(a, first, mid, searchVal, initial);
+				else                                // (a[mid] < searchVal)
+					return check(a, mid + 1, last, searchVal, initial);
 			}
 			else
-				return -1;
-
-			//double  midPoint = 0;
-			//if (a.Length % 2 != 0)
-			//	midPoint = a[(a.Length - 1) / 2];
-			//else
-			//	midPoint = ((double)a[(a.Length - 1) / 2] + (double)a[((a.Length - 1) / 2) + 1 ]) / 2;
-			//if (val < midPoint)
-			//{
-			//	//left
-			//	check()
-			//}
-			//else
-			//{
-			//	//right
-			//}
+				return false;
 		}
 	}
 }
