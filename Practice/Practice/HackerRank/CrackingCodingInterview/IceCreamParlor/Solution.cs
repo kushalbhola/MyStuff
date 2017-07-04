@@ -62,5 +62,6 @@ namespace Practice.CrackingCodingInterview.IceCreamParlor
 			else
 				return false;
 		}
+
 	}
 }

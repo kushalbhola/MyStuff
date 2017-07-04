@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Practice.HackerEarth.MicroMini</StartupObject>
+    <StartupObject>Practice.HackerRank.Algorithms.Strings.AlternatingCharacters.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,25 +59,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="30DaysOfCode\Day0PrintHelloWorld\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day1DataTypes\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day2Operators\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day3IntroConditionalStatements\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day4ClassVsInstance\Person.cs" />
-    <Compile Include="30DaysOfCode\Day4ClassVsInstance\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day5Loops\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day6LetsReview\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day7Arrays\Solution.cs" />
-    <Compile Include="30DaysOfCode\Day8DictionaryAndMaps\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\BalancedBrackets\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\BubbleSort\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\CheckBST\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\DetectACycle\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\IceCreamParlor\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\Making Anagrams\Solution.cs" />
-    <Compile Include="CrackingCodingInterview\Ransom Notes\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day0PrintHelloWorld\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day1DataTypes\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day2Operators\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day3IntroConditionalStatements\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day4ClassVsInstance\Person.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day4ClassVsInstance\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day5Loops\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day6LetsReview\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day7Arrays\Solution.cs" />
+    <Compile Include="HackerRank\30DaysOfCode\Day8DictionaryAndMaps\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\AlternatingCharacters\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\BeautifulStrings\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\BubbleSort\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\CheckBST\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\DetectACycle\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\IceCreamParlor\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\Making Anagrams\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\Ransom Notes\Solution.cs" />
     <Compile Include="HackerEarth\MicroMini.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
