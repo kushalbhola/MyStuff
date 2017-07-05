@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Practice.HackerRank.Algorithms.Strings.AlternatingCharacters.Solution</StartupObject>
+    <StartupObject>Practice.HackerRank.Algorithms.Strings.TwoStrings</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,6 +71,11 @@
     <Compile Include="HackerRank\30DaysOfCode\Day8DictionaryAndMaps\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\AlternatingCharacters\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\BeautifulStrings\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\LoveMystery.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\MakingAnagrams.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\PalindromeIndex.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\StringConstruction.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\TwoStrings.cs" />
     <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />

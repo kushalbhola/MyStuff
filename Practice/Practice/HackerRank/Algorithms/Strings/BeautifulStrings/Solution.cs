@@ -8,6 +8,7 @@ class Solution
 	static int minSteps(int n, string B)
 	{
 		// Complete this function
+		return n;
 	}
 
 	static void Main(String[] args)
