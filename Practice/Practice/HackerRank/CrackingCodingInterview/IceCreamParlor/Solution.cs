@@ -34,7 +34,6 @@ namespace Practice.CrackingCodingInterview.IceCreamParlor
 							Console.WriteLine(val1  + " " + val2);
 						}
 					}
-					
 				}
 				Console.ReadLine();
 			}

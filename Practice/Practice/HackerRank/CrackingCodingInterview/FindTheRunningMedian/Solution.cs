@@ -14,7 +14,7 @@ namespace Practice.CrackingCodingInterview.FindTheRunningMedian
 			for (int a_i = 0; a_i < n; a_i++)
 			{
 				a[a_i] = Convert.ToInt32(Console.ReadLine());
-				Console.WriteLine(findMedian(a));
+				Console.WriteLine("Running Median: " + findMedian(a));
 			}
 		}
 		public static int findMedian(int[] a)
@@ -26,7 +26,8 @@ namespace Practice.CrackingCodingInterview.FindTheRunningMedian
 			}
 			else
 			{
-				med = a[a.Length + 1];
+				var x = a.Length / 2;
+				med = a[a.Length / 2];
 			}
 			return med;
 		}
