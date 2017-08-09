@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Practice.CrackingCodingInterview.DFS.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.CoinChange.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -81,13 +81,17 @@
     <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BubbleSort\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\CheckBST\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\CoinChange\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\DetectACycle\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\DFS\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\Fibonacci\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\IceCreamParlor\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\Making Anagrams\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\Ransom Notes\Solution.cs" />
     <Compile Include="HackerEarth\MicroMini.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
