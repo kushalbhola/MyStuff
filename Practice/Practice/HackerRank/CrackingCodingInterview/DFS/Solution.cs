@@ -9,16 +9,29 @@ namespace Practice.CrackingCodingInterview.DFS
 	{
 		static void Main(String[] args)
 		{
-			int n = 4;
-			int m = 4;
-			int[,] grid = new int[,]
+			//int n = 4;
+			//int m = 4;
+			//int[,] grid = new int[,]
+			//{
+			//{1, 1, 0, 0 },
+			//{0, 1, 1, 0 },
+			//{0, 0, 1, 0 },
+			//{1, 0, 0, 0 },
+			//};
+		
+			int n = Convert.ToInt32(Console.ReadLine());
+			int m = Convert.ToInt32(Console.ReadLine());
+			int[,] grid = new int[n,m];
+			for(int i = 0; i < n; i++)
 			{
-			{1, 1, 0, 0 },
-			{0, 1, 1, 0 },
-			{0, 0, 1, 0 },
-			{1, 0, 0, 0 },
-			};
-
+				string[] grid_temp = Console.ReadLine().Split(' ');
+				for (int j = 0; j < m; j++)
+				{
+					grid[i, j] = Convert.ToInt32(grid_temp[j]);
+				}
+				
+				//grid[i] = Array.ConvertAll(grid_temp, Int32.Parse);
+			}
 			Console.WriteLine(getBiggestregion(grid));
 			//Console.WriteLine(grid.GetUpperBound(1));
 			Console.ReadLine();

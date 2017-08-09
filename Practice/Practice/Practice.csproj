@@ -47,6 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
+    <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.CoinChange.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
@@ -79,6 +80,7 @@
     <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\BFS\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BubbleSort\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\CheckBST\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\CoinChange\Solution.cs" />
