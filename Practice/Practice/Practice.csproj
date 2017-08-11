@@ -48,7 +48,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
-    <StartupObject>Practice.CrackingCodingInterview.CoinChange.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
