@@ -48,7 +48,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
-    <StartupObject>Practice.CrackingCodingInterview.CoinChange.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.Lonely_Integer.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,11 +89,13 @@
     <Compile Include="HackerRank\CrackingCodingInterview\Fibonacci\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\FindTheRunningMedian\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\IceCreamParlor\Solution.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\Lonely Integer\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\Making Anagrams\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\Ransom Notes\Solution.cs" />
     <Compile Include="HackerEarth\MicroMini.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
+    <Compile Include="HackerRank\CrackingCodingInterview\TimeComplexityPrimality\Solution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
