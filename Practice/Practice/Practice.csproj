@@ -49,7 +49,7 @@
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
-    <StartupObject>Practice.CrackingCodingInterview.Lonely_Integer.Solution</StartupObject>
+    <StartupObject>Practice.HackerRank.Algorithms.Strings.SuperReducedString</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -77,6 +77,7 @@
     <Compile Include="HackerRank\Algorithms\Strings\MakingAnagrams.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\PalindromeIndex.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\StringConstruction.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\SuperReducedString.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\TwoStrings.cs" />
     <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
@@ -116,7 +117,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HackerRank\Extra Practice\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
