@@ -48,6 +48,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.Lonely_Integer.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
