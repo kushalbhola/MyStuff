@@ -9,15 +9,20 @@ namespace Practice.CrackingCodingInterview
 	{
 		public static void Main(String[] args)
 		{
-			//string[] tokens_n = Console.ReadLine().Split(' ');
-			//int n = Convert.ToInt32(tokens_n[0]);
-			//int k = Convert.ToInt32(tokens_n[1]);
-			//string[] a_temp = Console.ReadLine().Split(' ');
-			//int[] a = Array.ConvertAll(a_temp, Int32.Parse);
-
+            /*
+             * Arr= 12345
+             * Rotation 1: 23451
+             * Rotation 2: 34512, 
+             * 45123
+             * 51234
+             * 12345
+             * 23451
+             * So algorithm is , to rotate an array, take the continuous array sequence from 0 to 2, and then take the continuos sequence from that point till the end
+             * Important: What if the d > 5, the rotation should be cyclic, so just pass d/a.Length
+             * */
 			int[] a = { 1,2,3,4,5};
-			int d = 4;
-			string newArray = rotate(d, a);
+			int d = 6;
+			string newArray = rotate(d/a.Length, a);
 			Console.Write(newArray);
 			Console.ReadLine();
 		}

@@ -49,7 +49,7 @@
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
-    <StartupObject>Practice.HackerRank.Algorithms.Tree.HeightOfTree</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.Making_Anagrams.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

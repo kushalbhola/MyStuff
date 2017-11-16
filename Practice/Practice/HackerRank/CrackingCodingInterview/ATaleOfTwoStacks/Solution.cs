@@ -3,7 +3,14 @@
 	using System.Linq;
 	using System.Text;
 
-	namespace Practice.CrackingCodingInterview.ATaleOfTwoStacks
+/*
+ Problem: https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem
+ Algorithm: 
+    1. Enqueue everytime in the Stack1
+    2. While deque, transfer everything on th stack2 and then Pop the top ost element from Stack2
+ */
+
+namespace Practice.CrackingCodingInterview.ATaleOfTwoStacks
 	{
 		class Solution
 		{
