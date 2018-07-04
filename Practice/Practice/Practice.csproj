@@ -49,7 +49,7 @@
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
-    <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.RemoveSpecifiedCharacters</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -102,6 +102,7 @@
     <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\TimeComplexityPrimality\Solution.cs" />
+    <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
