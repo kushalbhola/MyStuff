@@ -49,6 +49,7 @@
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
@@ -76,12 +77,14 @@
     <Compile Include="HackerRank\Algorithms\Strings\BeautifulStrings\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\LoveMystery.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\MakingAnagrams.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\MarsExploration.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\PalindromeIndex.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\StringConstruction.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\SuperReducedString.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\TwoCharacters.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\TwoStrings.cs" />
     <Compile Include="HackerRank\Algorithms\Tree\HeightOfTree.cs" />
+    <Compile Include="HackerRank\Algorithms\Tree\InsertBinaryTree\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />
@@ -101,6 +104,9 @@
     <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\TimeComplexityPrimality\Solution.cs" />
+    <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
+    <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
+    <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HackerRank\Extra Practice\" />
+    <Folder Include="ProgrammingInterviewExposed\Recursion\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

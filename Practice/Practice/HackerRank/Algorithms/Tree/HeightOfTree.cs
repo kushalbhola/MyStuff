@@ -11,12 +11,13 @@ namespace Practice.HackerRank.Algorithms.Tree
 		{
 			int[] arr = { 1, 2, 5, 3, 6, 4 };
 			Node root = ConstructTree(arr);
-			int height = GetHeight2(root);
-			Console.WriteLine(height);
-			Console.WriteLine("PreOrder: ");
+            Console.WriteLine("height1: " + GetHeight2(root));
+            Console.WriteLine("height2: " + GetHeight2(root));
+
+            Console.WriteLine("PreOrder: ");    
 			PreOrder(root); Console.WriteLine();
-			Console.WriteLine("InOrder: ");
-			InOrder(root); Console.WriteLine();
+			Console.WriteLine("InOrder: ");     //left, root, rightx
+            InOrder(root); Console.WriteLine();
 			Console.WriteLine("PostOrder");
 			PostOrder(root); Console.WriteLine();
 			Console.WriteLine("Top View");
@@ -45,7 +46,35 @@ namespace Practice.HackerRank.Algorithms.Tree
 				return root;
 			}
 		}
-		public static Node ConstructTree(int[] arr)
+
+        static Node Balance(Node root, int val)
+        {
+            //insert the value first
+            root = Insert(root, val);
+
+            //start the process of balancing
+
+            // if the Height[RightSubtree]  - Height[LeftSubtree] > 1 or -1
+            while (Math.Abs(GetHeight(root.left) - GetHeight(root.left)) > 1)
+            {
+                if (GetHeight(root.left) > GetHeight(root.right))
+                {
+                    //left is bigger than right
+                    Node newRoot = root.left;
+                    root.left = newRoot.right;
+                    newRoot.right = root;
+                }
+                else
+                {
+                    //right is bigger than left
+                    Node newRoot = root.right;
+                    root.right = newRoot.left;
+                    newRoot.left = root;
+                }
+            }
+            return root;
+        }
+        public static Node ConstructTree(int[] arr)
 		{
 			Node root = null;
 			foreach (int a in arr)
