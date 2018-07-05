@@ -12,6 +12,7 @@ namespace Practice.HackerRank.Algorithms.Tree
 			int[] arr = { 1, 2, 5, 3, 6, 4 };
 			Node root = ConstructTree(arr);
             Console.WriteLine("height1: " + GetHeight2(root));
+             flatten2(root);
             Console.WriteLine("height2: " + GetHeight2(root));
 
             Console.WriteLine("PreOrder: ");    
@@ -26,6 +27,67 @@ namespace Practice.HackerRank.Algorithms.Tree
 			levelOrder(root);
 			Console.ReadKey();
 		}
+
+        private static Node Flatten(Node root)
+        {
+            Queue<Node> q = new Queue<Node>();
+            if (root == null) return null;
+            if (root.left != null) q.Enqueue(root.left);
+            if (root.right != null) q.Enqueue(root.right);
+            Node newRoot = root;
+            
+            while (q.Count != 0)
+            {
+                Node element = q.Dequeue();
+                // attach the element as the rightmost leaf
+                newRoot = FlattenHelper(root, element);
+                root.right = element;
+                if (element.left != null) q.Enqueue(element.left);
+                if (element.right != null) q.Enqueue(element.right);
+            }
+            return root;
+        }
+        public static void flatten2(Node root)
+        {
+            if (root == null) { return; }
+            Queue<Node> queue = new Queue<Node>();
+            dfs(root, queue);
+            Node pre = queue.Dequeue();
+            pre.left = null;
+            pre.right = null;
+            while (queue.Count() != 0)
+            {
+                Node temp = queue.Dequeue();
+                temp.right = pre;
+                temp.left = null;
+                pre = temp;
+            }
+        }
+        public static void dfs(Node root, Queue<Node> queue)
+        {
+            if (root == null) { return; }
+            if (root.right != null)
+            {
+                dfs(root.right, queue);
+            }
+            if (root.left != null)
+            {
+                dfs(root.left, queue);
+            }
+            queue.Enqueue(root);
+        }
+        private static Node FlattenHelper(Node root, Node element)
+        {
+            if (root.right == null)
+            {
+                root.right = element;
+                return root;
+            }
+            else
+            {
+                return FlattenHelper(root.right, element);
+            }    
+        }
 		public static Node Insert(Node root, int data)
 		{
 			if(root == null)
@@ -89,13 +151,6 @@ namespace Practice.HackerRank.Algorithms.Tree
 				return -1;
 			else
 			{
-				//int leftHeight = GetHeight(root.left);
-				//int rightHeight = GetHeight(root.right);
-
-				//if (leftHeight > rightHeight)
-				//	return (leftHeight + 1);
-				//else
-				//	return (rightHeight + 1);
 				return 1 + Math.Max(GetHeight(root.left), GetHeight(root.right));
 			}
 		}
