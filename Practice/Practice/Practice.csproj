@@ -49,6 +49,8 @@
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
+    <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
+    <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
     <StartupObject>Practice.Leetcode.TestTime</StartupObject>
   </PropertyGroup>
   <ItemGroup>
@@ -80,6 +82,7 @@
     <Compile Include="HackerRank\Algorithms\Strings\PalindromeIndex.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\StringConstruction.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\SuperReducedString.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\TwoCharacters.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\TwoStrings.cs" />
     <Compile Include="HackerRank\Algorithms\Tree\HeightOfTree.cs" />
     <Compile Include="HackerRank\Algorithms\Tree\InsertBinaryTree\Solution.cs" />
@@ -105,6 +108,9 @@
     <Compile Include="Leetcode\104_Balanced Binary Tree.cs" />
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
+    <Compile Include="Leetcode\20_Valid Parentheses.cs" />
+    <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
