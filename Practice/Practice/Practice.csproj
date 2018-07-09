@@ -51,7 +51,7 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
-    <StartupObject>Practice.Leetcode.TestTime</StartupObject>
+    <StartupObject>Practice.Leetcode._61_Rotate_List</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -110,6 +110,8 @@
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\20_Valid Parentheses.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="Leetcode\593_ValidSquare.cs" />
+    <Compile Include="Leetcode\61_Rotate List.cs" />
     <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
