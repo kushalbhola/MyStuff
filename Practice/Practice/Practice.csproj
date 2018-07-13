@@ -51,7 +51,7 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
-    <StartupObject>Practice.Leetcode._61_Rotate_List</StartupObject>
+    <StartupObject>Practice.Leetcode._35_Search_Insert_Position</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -109,6 +109,8 @@
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\20_Valid Parentheses.cs" />
+    <Compile Include="Leetcode\35_Search Insert Position.cs" />
+    <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
     <Compile Include="Leetcode\593_ValidSquare.cs" />
     <Compile Include="Leetcode\61_Rotate List.cs" />
@@ -140,6 +142,10 @@
   <ItemGroup>
     <Folder Include="HackerRank\Extra Practice\" />
     <Folder Include="ProgrammingInterviewExposed\Recursion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Leetcode\DB\180_Consecutive Numbers.sql" />
+    <Content Include="Leetcode\DB\181_Employees Earning More Than Their Managers.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
