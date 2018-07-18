@@ -144,8 +144,10 @@
     <Folder Include="ProgrammingInterviewExposed\Recursion\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Leetcode\DB\178_Rank Scores.sql" />
     <Content Include="Leetcode\DB\180_Consecutive Numbers.sql" />
     <Content Include="Leetcode\DB\181_Employees Earning More Than Their Managers.sql" />
+    <Content Include="Leetcode\DB\184_Department Highest Salary.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
