@@ -46,10 +46,14 @@ namespace Practice.CrackingCodingInterview.Fibonacci
 		}
 		public static void Main(String[] args)
 		{
+            var watch = System.Diagnostics.Stopwatch.StartNew();
 			//Console.WriteLine(Fibonacci(40));
-			//Console.WriteLine(FibonacciMemo(10));
-			Console.WriteLine(FibonacciDP(40));
-			Console.ReadLine();
+            Console.WriteLine(FibonacciMemo(40));
+            //Console.WriteLine(FibonacciDP(40));
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+            Console.WriteLine(elapsedMs + " ms");
+            Console.ReadLine();
 		}
 	}
 }

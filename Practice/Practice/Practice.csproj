@@ -51,6 +51,7 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
+    <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.Leetcode._432_K_diff_Pairs_in_an_Array</StartupObject>
   </PropertyGroup>
   <ItemGroup>
@@ -74,6 +75,7 @@
     <Compile Include="HackerRank\30DaysOfCode\Day6LetsReview\Solution.cs" />
     <Compile Include="HackerRank\30DaysOfCode\Day7Arrays\Solution.cs" />
     <Compile Include="HackerRank\30DaysOfCode\Day8DictionaryAndMaps\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\knapsack_Greedy.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\AlternatingCharacters\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\BeautifulStrings\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\LoveMystery.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="HackerRank\Algorithms\Tree\HeightOfTree.cs" />
     <Compile Include="HackerRank\Algorithms\Tree\InsertBinaryTree\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Warmups\BirthdayCakeCandles\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Warmups\Factorial.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\ATaleOfTwoStacks\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BalancedBrackets\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\BFS\Solution.cs" />
@@ -108,17 +111,35 @@
     <Compile Include="Leetcode\104_Balanced Binary Tree.cs" />
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
+    <Compile Include="Leetcode\121_Best Time to Buy and Sell Stock.cs" />
+    <Compile Include="Leetcode\122_Best Time to Buy and Sell Stock II.cs" />
+    <Compile Include="Leetcode\134_Gas Station.cs" />
+    <Compile Include="Leetcode\15_3Sum.cs" />
+    <Compile Include="Leetcode\169_Majority Element.cs" />
+    <Compile Include="Leetcode\189_Rotate Array.cs" />
+    <Compile Include="Leetcode\18_4Sum.cs" />
     <Compile Include="Leetcode\20_Valid Parentheses.cs" />
+    <Compile Include="Leetcode\229_Majority Element II.cs" />
+    <Compile Include="Leetcode\238_Product of Array Except Self.cs" />
+    <Compile Include="Leetcode\263_UglyNumber.cs" />
+    <Compile Include="Leetcode\264_UglyNumber_2.cs" />
+    <Compile Include="Leetcode\33_Search in Rotated Sorted Array.cs" />
+    <Compile Include="Leetcode\35_Flipping_Image.cs" />
     <Compile Include="Leetcode\35_Search Insert Position.cs" />
     <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
-    <Compile Include="Leetcode\432_K-diff Pairs in an Array.cs" />
+    <Compile Include="Leetcode\442_Find All Duplicates in an Array.cs" />
+    <Compile Include="Leetcode\495_Teemo_Attacking.cs" />
     <Compile Include="Leetcode\593_ValidSquare.cs" />
     <Compile Include="Leetcode\61_Rotate List.cs" />
+    <Compile Include="Leetcode\7_Reverse Integer.cs" />
     <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
+    <Compile Include="Leetcode\DP\322_Coin Change.cs" />
+    <Compile Include="Leetcode\DP\518_Coin Change 2.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
+    <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
