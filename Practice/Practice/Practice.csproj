@@ -51,7 +51,7 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
-    <StartupObject>Practice.Leetcode._35_Search_Insert_Position</StartupObject>
+    <StartupObject>Practice.Leetcode._432_K_diff_Pairs_in_an_Array</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -112,6 +112,7 @@
     <Compile Include="Leetcode\35_Search Insert Position.cs" />
     <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="Leetcode\432_K-diff Pairs in an Array.cs" />
     <Compile Include="Leetcode\593_ValidSquare.cs" />
     <Compile Include="Leetcode\61_Rotate List.cs" />
     <Compile Include="Leetcode\9_Palindrome Number.cs" />

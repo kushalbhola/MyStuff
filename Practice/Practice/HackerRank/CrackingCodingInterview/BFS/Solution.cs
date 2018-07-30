@@ -71,7 +71,7 @@ namespace Practice.CrackingCodingInterview.BFS
 	}
 	class Solution
 	{
-		static void Main(String[] args)
+		public static void Main(String[] args)
 		{
 			int queries = Convert.ToInt32(Console.ReadLine());
 

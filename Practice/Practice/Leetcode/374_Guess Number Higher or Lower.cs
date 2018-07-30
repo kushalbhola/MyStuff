@@ -24,5 +24,9 @@ namespace Practice.Leetcode
             }
             return 0;
         }
+        private int guess(int x)
+        {
+            return x;
+        }
     }
 }

@@ -25,17 +25,11 @@ namespace Practice.CrackingCodingInterview.BalancedBrackets
 					else if (c == '[') s.Push(c);
 
 					else if (c == ')' && s.Count > 0)
-					{
 						if ((char)s.Peek() == '(') s.Pop();
-					}
 					else if (c == '}' && s.Count > 0)
-					{
 						if ((char)s.Peek() == '{') s.Pop();
-					}
 					else if (c == ']' && s.Count > 0)
-					{
 						if ((char)s.Peek() == '[') s.Pop();
-					}
 					else
 					{
 						results[a0] = "NO";
