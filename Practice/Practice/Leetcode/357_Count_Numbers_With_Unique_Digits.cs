@@ -12,12 +12,13 @@ namespace Practice.Leetcode
             int x = 111;
             char[] ch = x.ToString().ToCharArray();
             Dictionary<char, int> hash = new Dictionary<char, int>();
-            foreach(char c in ch)
+            foreach (char c in ch)
             {
                 if (hash.ContainsKey(c))
                     hash[c] += 1;
                 else
                     hash[c] = 1;
             }
+        }
     }
 }

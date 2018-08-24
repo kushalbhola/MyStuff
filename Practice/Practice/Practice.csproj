@@ -51,7 +51,7 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
-    <StartupObject>Practice.Leetcode._11_Container_With_Most_Water</StartupObject>
+    <StartupObject>Practice.Leetcode._724_Find_Pivot_Index</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -128,6 +128,7 @@
     <Compile Include="Leetcode\35_Flipping_Image.cs" />
     <Compile Include="Leetcode\35_Search Insert Position.cs" />
     <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
+    <Compile Include="Leetcode\389_Find the Difference.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
     <Compile Include="Leetcode\414_ThirdMax.cs" />
     <Compile Include="Leetcode\432_K-diff Pairs in an Array.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Leetcode\DP\64_Minimum Path Sum.cs" />
     <Compile Include="Leetcode\DP\70_Climbing Stairs.cs" />
     <Compile Include="Leetcode\Pramp\Busiest Time in The Mall.cs" />
+    <Compile Include="Leetcode\Pramp\Pairs with Specific Differences.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
     <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
