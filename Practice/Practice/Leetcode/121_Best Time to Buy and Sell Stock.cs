@@ -14,15 +14,14 @@ namespace Practice.Leetcode
         }
         public static int MaxProfit(int[] prices)
         {
-            int minValue = 100000;
+            int minValue = Int32.MaxValue;
             int profit = 0;
-            int maxValue = -100000;
+            int maxValue = Int32.MinValue;
             for(int i = 0; i < prices.Length; i++)
             {
                 if (prices[i] < minValue)
                 {
                     minValue = prices[i];
-                    maxValue = prices[i];
                     //profit = maxValue - minValue;
                 }
                 else if(prices[i] > minValue && prices[i] - minValue > profit)

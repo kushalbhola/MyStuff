@@ -53,6 +53,7 @@
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
+    <StartupObject>Practice.Leetcode._724_Find_Pivot_Index</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -111,6 +112,7 @@
     <Compile Include="Leetcode\104_Balanced Binary Tree.cs" />
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
+    <Compile Include="Leetcode\11_Container With Most Water.cs" />
     <Compile Include="Leetcode\121_Best Time to Buy and Sell Stock.cs" />
     <Compile Include="Leetcode\122_Best Time to Buy and Sell Stock II.cs" />
     <Compile Include="Leetcode\134_Gas Station.cs" />
@@ -123,21 +125,39 @@
     <Compile Include="Leetcode\238_Product of Array Except Self.cs" />
     <Compile Include="Leetcode\263_UglyNumber.cs" />
     <Compile Include="Leetcode\264_UglyNumber_2.cs" />
+    <Compile Include="Leetcode\283_MoveZeroes.cs" />
     <Compile Include="Leetcode\33_Search in Rotated Sorted Array.cs" />
     <Compile Include="Leetcode\35_Flipping_Image.cs" />
     <Compile Include="Leetcode\35_Search Insert Position.cs" />
     <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
+    <Compile Include="Leetcode\389_Find the Difference.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="Leetcode\414_ThirdMax.cs" />
+    <Compile Include="Leetcode\432_K-diff Pairs in an Array.cs" />
     <Compile Include="Leetcode\442_Find All Duplicates in an Array.cs" />
+    <Compile Include="Leetcode\448_Find All Numbers Disappeared in an Array.cs" />
+    <Compile Include="Leetcode\485_Max Consecutive Ones.cs" />
     <Compile Include="Leetcode\495_Teemo_Attacking.cs" />
     <Compile Include="Leetcode\593_ValidSquare.cs" />
     <Compile Include="Leetcode\61_Rotate List.cs" />
+    <Compile Include="Leetcode\724_Find Pivot Index.cs" />
     <Compile Include="Leetcode\7_Reverse Integer.cs" />
     <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
+    <Compile Include="Leetcode\BackTracking\102_Binary_Tree_Level_Order_Traversal.cs" />
+    <Compile Include="Leetcode\BackTracking\216_Combination_Sum_III.cs" />
+    <Compile Include="Leetcode\BackTracking\784_Letter_Case_Permutation.cs" />
+    <Compile Include="Leetcode\DP\198_HouseRobber.cs" />
     <Compile Include="Leetcode\DP\322_Coin Change.cs" />
+    <Compile Include="Leetcode\DP\338_CountingBits.cs" />
     <Compile Include="Leetcode\DP\518_Coin Change 2.cs" />
+    <Compile Include="Leetcode\DP\53_Maximum Subarray.cs" />
+    <Compile Include="Leetcode\DP\62_Unique Paths.cs" />
+    <Compile Include="Leetcode\DP\64_Minimum Path Sum.cs" />
+    <Compile Include="Leetcode\DP\70_Climbing Stairs.cs" />
+    <Compile Include="Leetcode\Pramp\Busiest Time in The Mall.cs" />
+    <Compile Include="Leetcode\Pramp\Pairs with Specific Differences.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
     <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
@@ -163,15 +183,31 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="HackerRank\Extra Practice\" />
+    <Folder Include="Leetcode\BFS\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="ProgrammingInterviewExposed\Recursion\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Practice.exe" />
+    <Content Include="bin\Debug\Practice.pdb" />
+    <Content Include="bin\Debug\Practice.vshost.exe" />
     <Content Include="Leetcode\DB\178_Rank Scores.sql" />
     <Content Include="Leetcode\DB\180_Consecutive Numbers.sql" />
     <Content Include="Leetcode\DB\181_Employees Earning More Than Their Managers.sql" />
     <Content Include="Leetcode\DB\184_Department Highest Salary.sql" />
-    <Content Include="Leetcode\DB\596_Classes More Than 5 Students.sql" />
+    <Content Include="Leetcode\Python\Hello.py" />
+    <Content Include="obj\Debug\Practice.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Practice.exe" />
+    <Content Include="obj\Debug\Practice.pdb" />
+    <Content Include="SQL\HackerRank\Advanced Joins\Placements.sql" />
+    <Content Include="SQL\HackerRank\Advanced Joins\Projects.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Practice.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\Practice.csproj.CoreCompileInputs.cache" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
