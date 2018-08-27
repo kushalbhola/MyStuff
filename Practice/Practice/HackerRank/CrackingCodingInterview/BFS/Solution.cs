@@ -40,6 +40,7 @@ namespace Practice.CrackingCodingInterview.BFS
 		public Dictionary<int, int> shortestReach(int startID)
 		{
 			List<int> queue = new List<int>();
+            int result = queue.Sum(x => x);
 			queue.Add(startID);
 			//int[] distances = new int[graph.Count];
 

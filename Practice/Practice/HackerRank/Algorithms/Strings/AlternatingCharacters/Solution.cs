@@ -6,34 +6,32 @@ using System.Text;
 
 namespace Practice.HackerRank.Algorithms.Strings.AlternatingCharacters
 {
+    //A
 	class Solution
 	{
 		static int alternatingCharacters(string s)
 		{
-			char[] ch = s.ToCharArray();
-			ArrayList newCharArray = new ArrayList();
-			int count = 0;
-			for (int i = 0; i < ch.Length-1; i++)
-			{
-				if(ch[i] == ch[i + 1])
-				{
-					newCharArray.Add(ch[i]);
-					count++;
-				}
-			}
-			return count;
-		}
+            char[] ch = s.ToCharArray();
+            ArrayList newCharArray = new ArrayList();
+            int slow = 0;
+            int fast = 1;
+            int count = 0;
+            while (fast < ch.Length)
+            {
+                if(ch[slow] == ch[fast])
+                    count++;
+                fast++;
+                slow++;
+            }
 
-		static void Main(String[] args)
+            return count;
+        }
+
+        static void Main(String[] args)
 		{
-			int q = Convert.ToInt32(Console.ReadLine());
-			for (int a0 = 0; a0 < q; a0++)
-			{
-				string s = Console.ReadLine();
-				int result = alternatingCharacters(s);
-				Console.WriteLine(result);
-			}
-			Console.ReadLine();
-		}
+            string s = "ABBABBAA";
+            int result = alternatingCharacters(s);
+
+        }
 	}
 }

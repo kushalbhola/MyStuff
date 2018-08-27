@@ -52,7 +52,7 @@
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
-    <StartupObject>Practice.Leetcode._432_K_diff_Pairs_in_an_Array</StartupObject>
+    <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -142,6 +142,7 @@
     <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
+    <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\SpiralMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <Content Include="Leetcode\DB\180_Consecutive Numbers.sql" />
     <Content Include="Leetcode\DB\181_Employees Earning More Than Their Managers.sql" />
     <Content Include="Leetcode\DB\184_Department Highest Salary.sql" />
+    <Content Include="Leetcode\DB\596_Classes More Than 5 Students.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
