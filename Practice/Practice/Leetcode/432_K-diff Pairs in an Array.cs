@@ -19,7 +19,7 @@ namespace Practice.Leetcode
             int left = 0;
             int right = 1;
             int count = 0;
-            Array.Sort(nums);
+            //Array.Sort(nums);
             while (right < nums.Length)
             {
                 if(nums[right] - nums[left]  < k)

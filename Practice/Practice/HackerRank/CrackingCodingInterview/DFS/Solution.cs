@@ -19,20 +19,34 @@ namespace Practice.CrackingCodingInterview.DFS
 			//{1, 0, 0, 0 },
 			//};
 		
-			int n = Convert.ToInt32(Console.ReadLine());
-			int m = Convert.ToInt32(Console.ReadLine());
-			int[,] grid = new int[n,m];
-			for(int i = 0; i < n; i++)
-			{
-				string[] grid_temp = Console.ReadLine().Split(' ');
-				for (int j = 0; j < m; j++)
-				{
-					grid[i, j] = Convert.ToInt32(grid_temp[j]);
-				}
+			//int n = Convert.ToInt32(Console.ReadLine());
+			//int m = Convert.ToInt32(Console.ReadLine());
+			//int[,] grid = new int[n,m];
+			//for(int i = 0; i < n; i++)
+			//{
+			//	string[] grid_temp = Console.ReadLine().Split(' ');
+			//	for (int j = 0; j < m; j++)
+			//	{
+			//		grid[i, j] = Convert.ToInt32(grid_temp[j]);
+			//	}
 				
-				//grid[i] = Array.ConvertAll(grid_temp, Int32.Parse);
-			}
-			Console.WriteLine(getBiggestregion(grid));
+			//	//grid[i] = Array.ConvertAll(grid_temp, Int32.Parse);
+			//}
+
+            int[,] grid2 =
+            {
+                {
+                    0,0,1,0,0,0,0,1,0,0,0,0,0,
+                    0,0,0,0,0,0,0,1,1,1,0,0,0,
+                    0,1,1,0,1,0,0,0,0,0,0,0,0,
+                    0,1,0,0,1,1,0,0,1,0,1,0,0,
+                    0,1,0,0,1,1,0,0,1,1,1,0,0,
+                    0,0,0,0,0,0,0,0,0,0,1,0,0,
+                    0,0,0,0,0,0,0,1,1,1,0,0,0,
+                    0,0,0,0,0,0,0,1,1,0,0,0,0
+                }
+            };
+			Console.WriteLine(getBiggestregion(grid2));
 			//Console.WriteLine(grid.GetUpperBound(1));
 			Console.ReadLine();
 		}

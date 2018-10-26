@@ -13,7 +13,7 @@ namespace TempProject.BackTracking
             //List<List<int>> result = CombinationSum3(3, 9);
             int[] nums = { 2, 3, 6, 7 };
             int target = 8;
-            //List<List<int>> result = combinationSum(nums, target);
+            List<List<int>> result = combinationSum(nums, target);
 
 
             int[] nums2 = { 10, 1, 2, 7, 6, 1, 5 };
@@ -26,7 +26,12 @@ namespace TempProject.BackTracking
             int[] nums4 = { 1, 2, 3 };
             //List<List<int>> result = permute(nums3);
 
-            List<List<int>> result = CombinationSum3(3, 9);
+            //ist<List<int>> result = CombinationSum3(3, 9);
+
+            int[] nums5 = { 1, 2, 3 };
+            int target5 = 4;
+            int result5 = combinationSum4DP(nums5, target5);
+            //int result5 = CombinationSum4(nums5, target5);
         }
         public static List<List<int>> permute(int[] nums)
         {
@@ -115,12 +120,12 @@ namespace TempProject.BackTracking
                 }
             }
         }
-        public static List<List<int>> CombinationSum3(int k, int target)
+        public static List<List<int>> CombinationSum3(int[] nums, int target)
         {
-            int[] nums = Enumerable.Range(1, 9).ToArray();
+            int[] nums3 = Enumerable.Range(1, 9).ToArray();
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
-            CombinationSum3Helper(list, new List<int>(), nums, target, 0, k);
+            Array.Sort(nums3);
+            CombinationSum3Helper(list, new List<int>(), nums3, target, 0, target);
             return list;
 
         }
@@ -142,6 +147,59 @@ namespace TempProject.BackTracking
 
                 }
             }
+        }
+        public static int CombinationSum4(int[] nums, int target)
+        {
+            List<List<int>> list = new List<List<int>>();
+            Array.Sort(nums);
+            CombinationSum4Helper(list, new List<int>(), nums, target, target);
+            return list.Count;
+
+        }
+        public static void CombinationSum4Helper(List<List<int>> list, List<int> tempList, int[] nums, int remain, int target)
+        {
+           if (remain < 0) return;
+            if (remain == 0)
+                list.Add(tempList);
+            else
+            {
+                for(int i = 0; i < nums.Length; i++)
+                {
+                    tempList.Add(nums[i]);
+                    CombinationSum4Helper(list, tempList, nums, remain- nums[i], target);
+                    tempList.RemoveAt(tempList.Count - 1);
+                }
+            }
+
+        }
+
+        public static int combinationSum4DP(int[] nums, int target)
+        { 
+            int[] dp = new int[target + 1];
+            for (int i = 1; i < dp.Length; i++)
+            {
+                dp[i] = -1;
+            }
+            dp[0] = 1;
+            return combinationSum4DPHelper(nums, target, dp);
+        }
+
+        private static int combinationSum4DPHelper(int[] nums, int target, int[] dp)
+        {
+            if (dp[target] != -1)
+            {
+                return dp[target];
+            }
+            int res = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (target >= nums[i])
+                {
+                    res += combinationSum4DPHelper(nums, target - nums[i], dp);
+                }
+            }
+            dp[target] = res;
+            return res;
         }
 
         //public static List<List<int>> CombinationSum3(int k, int n)

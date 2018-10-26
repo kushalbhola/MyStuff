@@ -18,7 +18,7 @@ namespace Practice.Leetcode
         {
             List<List<int>> ans = new List<List<int>>();
             if (nums.Length < 4) return ans;
-            Array.Sort(nums);
+//            Array(nums);
             
             for(int i = 0; i < nums.Length - 3; i++)
             {
