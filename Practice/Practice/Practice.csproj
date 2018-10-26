@@ -51,6 +51,9 @@
     <StartupObject>Practice.CrackingCodingInterview.IceCreamParlor.Solution</StartupObject>
     <StartupObject>Practice.CrackingCodingInterview.BalancedBrackets.Solution</StartupObject>
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
+    <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
+    <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
+    <StartupObject>Practice.Leetcode._724_Find_Pivot_Index</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -178,6 +181,7 @@
     <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
+    <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\SpiralMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
