@@ -57,6 +57,7 @@
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
     <StartupObject>Practice.Leetcode.DP._62_Unique_Paths</StartupObject>
+    <StartupObject>Practice.Leetcode._404_Sum_of_Left_Leaves</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
@@ -180,6 +181,7 @@
     <Compile Include="Leetcode\374_Guess Number Higher or Lower.cs" />
     <Compile Include="Leetcode\389_Find the Difference.cs" />
     <Compile Include="Leetcode\3_Longest Substring Without Repeating Characters.cs" />
+    <Compile Include="Leetcode\404_Sum of Left Leaves.cs" />
     <Compile Include="Leetcode\414_ThirdMax.cs" />
     <Compile Include="Leetcode\432_K-diff Pairs in an Array.cs" />
     <Compile Include="Leetcode\442_Find All Duplicates in an Array.cs" />
