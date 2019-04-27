@@ -11,6 +11,7 @@ namespace Practice._30DaysOfCode.Day8DictionaryAndMaps
 		{
 			int _T = Convert.ToInt32(Console.ReadLine());
 			Dictionary<int, String> map = new Dictionary<int, string>();
+            
 			for (int i = 0; i < _T; i++)
 			{
 				Console.WriteLine("Enter the name");

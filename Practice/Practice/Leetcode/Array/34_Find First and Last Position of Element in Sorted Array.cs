@@ -45,5 +45,24 @@ namespace Practice.Leetcode.Array
             }
             return start;
         }
+
+        //Attempt 2: 4/19
+        
+        private int BinarySearch(int[] nums, int target)
+        {
+            int start = 0;
+            int end = nums.Length - 1;
+            while(end > start)
+            {
+                int mid = (start + end) / 2;
+                if (nums[mid] == target)
+                    return mid;
+                else if (nums[mid] > target)
+                    end = mid - 1;
+                else
+                    start = mid + 1;
+            }
+            return 0;
+        }
     }
 }

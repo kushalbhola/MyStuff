@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{E9E0482D-2630-4C79-9A20-206CAB45FC94}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{DE0917F7-804C-4CE9-ACDF-96DA95DA3536}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApK77c+DxgEqwuHGlOPO9AAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD3Rx9MpychyhhJ6vqjaltzAAAAAASAAACgAAAAEAAAADxQJ0CMilRDWMEKwl5OdJUYAAAAprbdj2SEWnn9pd15K2Sr7Zv0wYJVkH9UFAAAAJv2innGWCIOMd9j7w3Ssq504rPC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAISMKBzhbEEuG0mtE6cqwbwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADe17xJJPpKj8HbYhrGfC8GAAAAAASAAACgAAAAEAAAAH6JBoTkLQ8nBolmrXFPfXQYAAAAToqStW2PZxf+/ITUoS0Uy1bCxw4cr0gGFAAAANAmgGZ8eKPTlg/+b8RNNdGjzQGk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -739,14 +739,14 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
+          Size="151.2,41.6"
           Id="Package\Sequence Container\Data Flow Task"
           TopLeft="42,15" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="282,113"
-          Size="282,156"
+          PanelSize="281.6,112.8"
+          Size="281.6,156"
           Id="Package\Sequence Container"
           TopLeft="527,140" />
       </GraphLayout>
@@ -758,13 +758,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158,42"
-          Id="Package\Sequence Container\Data Flow Task\ADO NET Source"
-          TopLeft="550,84" />
-        <NodeLayout
-          Size="179,42"
+          Size="179.2,41.6"
           Id="Package\Sequence Container\Data Flow Task\ADO NET Destination"
           TopLeft="534,336" />
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task\ADO NET Source"
+          TopLeft="550,84" />
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task.Paths[ADO NET Source Output]"
           TopLeft="626.25,126">
@@ -791,7 +791,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\ADO NET Source">
+    design-time-name="Package\Sequence Container\Data Flow Task\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -799,7 +799,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\ADO NET Destination">
+    design-time-name="Package\Sequence Container\Data Flow Task\ADO NET Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

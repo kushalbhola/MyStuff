@@ -9,8 +9,10 @@ namespace Practice.Leetcode
     {
         static void Main(String[] args)
         {
-            string input = "abca";
+            string input = "abcabcbb";
             int result = LengthOfLongestSubstring(input);
+            _3_Longest_Substring_Without_Repeating_Characters a = new _3_Longest_Substring_Without_Repeating_Characters();
+            result = a.LengthOfLongestSubstring2(input);
         }
         public static int LengthOfLongestSubstring(string s)
         {
@@ -32,6 +34,26 @@ namespace Practice.Leetcode
             }
             return ans;
 
+        }
+        public int LengthOfLongestSubstring2(string s)
+        {
+            int slow = 0;
+            int fast = 0;
+            int n = s.Length;
+            int ans = 0;
+
+            HashSet<char> hash = new HashSet<char>();
+            while (slow < n && fast < n)
+            {
+                if (!hash.Contains(s[fast]))
+                    hash.Add(s[fast++]);
+                else
+                {
+                    hash.Remove(s[slow++]);
+                }
+                ans = Math.Max(ans, fast - slow);
+            }
+            return ans;
         }
     }
 }

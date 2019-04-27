@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{43341EC8-B691-4566-9288-CD5049976E25}"
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ssisTest", "ssisTest\ssisTest.dtproj", "{6948009F-25BE-4641-BCA1-91A11CA00BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2", "Practice2\Practice2.csproj", "{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,8 +28,17 @@ Global
 		{6948009F-25BE-4641-BCA1-91A11CA00BC1}.Development|Any CPU.Build.0 = Development
 		{6948009F-25BE-4641-BCA1-91A11CA00BC1}.Release|Any CPU.ActiveCfg = Development
 		{6948009F-25BE-4641-BCA1-91A11CA00BC1}.Release|Any CPU.Build.0 = Development
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ADC2741-F22D-43C7-BDC0-1EF6D43DB96C}
 	EndGlobalSection
 EndGlobal

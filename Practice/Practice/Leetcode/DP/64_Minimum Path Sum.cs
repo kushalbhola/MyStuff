@@ -36,5 +36,12 @@ namespace Practice.Leetcode.DP
             }
             return DP[DP.GetLength(0) - 1, DP.GetLength(1) - 1];
         }
+        //Attempt 2: 
+
+        public int MinPathSum2(int[,] grid)
+        {
+
+            return 0;
+        }
     }
 }
