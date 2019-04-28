@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practi
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ssisTest", "ssisTest\ssisTest.dtproj", "{6948009F-25BE-4641-BCA1-91A11CA00BC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice2", "Practice2\Practice2.csproj", "{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice2", "Practice2\Practice2.csproj", "{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication", "PythonApplication\PythonApplication.pyproj", "{3EFD6A62-EF36-4F22-9B83-7555F8E29CF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,9 @@ Global
 		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAFC26CC-C070-45EE-A0C2-E9737E68DFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFD6A62-EF36-4F22-9B83-7555F8E29CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFD6A62-EF36-4F22-9B83-7555F8E29CF3}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFD6A62-EF36-4F22-9B83-7555F8E29CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
