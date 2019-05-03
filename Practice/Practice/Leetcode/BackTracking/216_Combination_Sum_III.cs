@@ -13,7 +13,7 @@ namespace Practice.Leetcode.BackTracking
             //List<List<int>> result = CombinationSum3(3, 9);
             int[] nums = { 2, 3, 6, 7 };
             int target = 8;
-            //List<List<int>> result = combinationSum(nums, target);
+            List<List<int>> result = combinationSum(nums, target);
 
 
             int[] nums2 = { 10, 1, 2, 7, 6, 1, 5 };
@@ -24,7 +24,7 @@ namespace Practice.Leetcode.BackTracking
             //List<List<int>> result = subset(nums3);
 
             int[] nums4 = { 1, 2, 3 };
-            List<List<int>> result = permute(nums3);
+            //List<List<int>> result = permute(nums3);
 
             //ist<List<int>> result = CombinationSum3(3, 9);
 

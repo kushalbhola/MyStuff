@@ -57,7 +57,7 @@
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
     <StartupObject>Practice.Leetcode.DP._62_Unique_Paths</StartupObject>
-    <StartupObject>Practice.Leetcode._404_Sum_of_Left_Leaves</StartupObject>
+    <StartupObject>Practice.Leetcode.BFS._513_FindBottomLeftTreeValue</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
@@ -156,6 +156,7 @@
     <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\TimeComplexityPrimality\Solution.cs" />
+    <Compile Include="Leetcode\101_Symmetric_Tree.cs" />
     <Compile Include="Leetcode\104_Balanced Binary Tree.cs" />
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
@@ -199,6 +200,7 @@
     <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
+    <Compile Include="Leetcode\Array\153_FindMinimumInRotatedSortedArray.cs" />
     <Compile Include="Leetcode\Array\168_Excel Sheet Column Title.cs" />
     <Compile Include="Leetcode\Array\16_3Sum.cs" />
     <Compile Include="Leetcode\Array\283_Move Zeroes.cs" />
@@ -214,6 +216,8 @@
     <Compile Include="Leetcode\BackTracking\102_Binary_Tree_Level_Order_Traversal.cs" />
     <Compile Include="Leetcode\BackTracking\216_Combination_Sum_III.cs" />
     <Compile Include="Leetcode\BackTracking\784_Letter_Case_Permutation.cs" />
+    <Compile Include="Leetcode\BFS\429_N_Arr_Tree_LevelOrder.cs" />
+    <Compile Include="Leetcode\BFS\513_FindBottomLeftTreeValue.cs" />
     <Compile Include="Leetcode\DFS\112_PathSum.cs" />
     <Compile Include="Leetcode\DP\198_HouseRobber.cs" />
     <Compile Include="Leetcode\DP\322_Coin Change.cs" />
@@ -259,7 +263,6 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="HackerRank\Extra Practice\" />
-    <Folder Include="Leetcode\BFS\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="ProgrammingInterviewExposed\Recursion\" />
   </ItemGroup>

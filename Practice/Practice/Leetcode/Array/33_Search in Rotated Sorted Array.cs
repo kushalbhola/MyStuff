@@ -69,6 +69,7 @@ namespace Practice.Leetcode.Array
                 int mid = (start + end) / 2;
                 //7,1,2,3,4,5,6
                 // 4, 5, 6, 7, 0, 1, 2 
+                //Find the inflexion point
                 if (nums[mid] < nums[mid-1] && nums[mid] < nums[mid+1])
                 {
                     point = mid;
