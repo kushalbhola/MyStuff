@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="adventureworksbdt.database.windows.net.AdventureWorks.kusha114 1"
+  DTS:DTSID="{0DE8A2D1-59E9-4537-B3BC-32373E06C014}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=adventureworksbdt.database.windows.net;User ID=kusha114;Initial Catalog=AdventureWorks;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdhKJkGUqu0SamK14NJDSlAAAAAACAAAAAAADZgAAwAAAABAAAABbBpTGUt7Mluda23UhnUCVAAAAAASAAACgAAAAEAAAAJ82hLI/bmKMBdByDiVSLTx4AAAAlVtd3PoWUAr1DXZggQ0e82QdRyuoXGwzf3qCWi6nseoZYfCTQ+Z083lDuhvnE1cTt14AuNRmFNOOGhSZRCGuii5EfgQEAaS1hi/nhwpk56cjHw04VION85C2hXmuz49vv7PiIAkLu1slX3xh29HCrtGHiw8yCAewFAAAANM1fJhjGS6DUKVaS/NQ2xBiXKA/</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -53,7 +53,7 @@
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
-    <StartupObject>Practice.Leetcode._404_Sum_of_Left_Leaves</StartupObject>
+    <StartupObject>Practice.Leetcode._442_Find_All_Duplicates_in_an_Array</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
