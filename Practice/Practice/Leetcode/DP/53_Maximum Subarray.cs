@@ -9,9 +9,10 @@ namespace Practice.Leetcode.DP
     {
         public static void Main(String[] args)
         {
-            int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            int[] nums = { -1,-2 };
             _53_Maximum_Subarray a = new _53_Maximum_Subarray();
             int result = a.MaxSubArray(nums);
+            result = a.MaxSubArray2(nums);
         }
         public int MaxSubArray(int[] nums)
         {
@@ -24,6 +25,25 @@ namespace Practice.Leetcode.DP
                 max = Math.Max(DP[i], max);
             }
             return max;
+        }
+        //Attempt 2
+        public int MaxSubArray2(int[] nums)
+        {
+            if (nums.Length == 1)
+                return nums[0];
+            int[] DP = new int[nums.Length];
+            DP[0] = nums[0];
+            int globalMax = -100;
+            for(int i=1;i<nums.Length;i++)
+            {
+                DP[i] = Math.Max(DP[i - 1] + nums[i], nums[i]);
+            }
+            foreach(int x in DP)
+            {
+                if (x > globalMax)
+                    globalMax = x;
+            }
+            return globalMax;
         }
     }
 }

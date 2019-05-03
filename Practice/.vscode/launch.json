@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinimumPathSum",
+            "request": "launch",
+            "mainClass": "Leetcode.MinimumPathSum",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UniquePaths",
+            "request": "launch",
+            "mainClass": "Leetcode.UniquePaths",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CombinationSum",
+            "request": "launch",
+            "mainClass": "Leetcode.CombinationSum",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstAndLastPositionInSortedArray",
+            "request": "launch",
+            "mainClass": "Leetcode.FirstAndLastPositionInSortedArray",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ContainerWithMostWater",
+            "request": "launch",
+            "mainClass": "Leetcode.ContainerWithMostWater",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringWithoutRepeating",
+            "request": "launch",
+            "mainClass": "Leetcode.LongestSubstringWithoutRepeating",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{F4C900D8-27AA-47C5-B429-D5BE7DEB8CD3}">
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{E9E0482D-2630-4C79-9A20-206CAB45FC94}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,12 @@
       DTS:ObjectName="adventureworksbdt.database.windows.net.AdventureWorks.kusha1141">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=adventureworksbdt.database.windows.net;User ID=kusha114;Initial Catalog=AdventureWorks;Application Name=SSIS-Package-{0ED8E750-BFB2-40C5-96E3-0821E15BE0D1}adventureworksbdt.database.windows.net.AdventureWorks.kusha1141;" />
+          DTS:ConnectionString="Data Source=adventureworksbdt.database.windows.net;User ID=kusha114;Initial Catalog=AdventureWorks;Application Name=SSIS-Package-{0ED8E750-BFB2-40C5-96E3-0821E15BE0D1}adventureworksbdt.database.windows.net.AdventureWorks.kusha1141;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApK77c+DxgEqwuHGlOPO9AAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD3Rx9MpychyhhJ6vqjaltzAAAAAASAAACgAAAAEAAAADxQJ0CMilRDWMEKwl5OdJUYAAAAprbdj2SEWnn9pd15K2Sr7Zv0wYJVkH9UFAAAAJv2innGWCIOMd9j7w3Ssq504rPC</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -762,14 +767,14 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
+          Size="151.2,41.6"
           Id="Package\Sequence Container\Data Flow Task"
           TopLeft="42,15" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="282,113"
-          Size="282,156"
+          PanelSize="281.6,112.8"
+          Size="281.6,156"
           Id="Package\Sequence Container"
           TopLeft="527,140" />
       </GraphLayout>
@@ -827,7 +832,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Sequence Container\Data Flow Task\ADO NET Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

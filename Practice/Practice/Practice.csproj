@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Practice</RootNamespace>
     <AssemblyName>Practice</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -26,6 +26,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Practice.CrackingCodingInterview.BFS.Solution</StartupObject>
@@ -53,11 +56,56 @@
     <StartupObject>Practice.Leetcode._3_Longest_Substring_Without_Repeating_Characters</StartupObject>
     <StartupObject>Practice.Leetcode._238_Product_of_Array_Except_Self</StartupObject>
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
+    <StartupObject>Practice.Leetcode.DP._62_Unique_Paths</StartupObject>
+    <StartupObject>Practice.Leetcode.BFS._513_FindBottomLeftTreeValue</StartupObject>
     <StartupObject>Practice.Leetcode._442_Find_All_Duplicates_in_an_Array</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.12.1.2\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.5.5.0\lib\net45\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Client.5.5.0\lib\net45\ServiceStack.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.5.5.0\lib\net45\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.5.5.0\lib\net45\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.5.5.0\lib\net45\ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -109,6 +157,7 @@
     <Compile Include="HackerRank\CrackingCodingInterview\RecurssionDavisStaircase\Solution.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\RotatingArray\RotatingArrY.cs" />
     <Compile Include="HackerRank\CrackingCodingInterview\TimeComplexityPrimality\Solution.cs" />
+    <Compile Include="Leetcode\101_Symmetric_Tree.cs" />
     <Compile Include="Leetcode\104_Balanced Binary Tree.cs" />
     <Compile Include="Leetcode\104_Maximum Depth of Binary Tree.cs" />
     <Compile Include="Leetcode\111_Minimum Depth of Binary Tree.cs" />
@@ -121,6 +170,7 @@
     <Compile Include="Leetcode\189_Rotate Array.cs" />
     <Compile Include="Leetcode\18_4Sum.cs" />
     <Compile Include="Leetcode\20_Valid Parentheses.cs" />
+    <Compile Include="Leetcode\21_MergeTwoSortedList.cs" />
     <Compile Include="Leetcode\229_Majority Element II.cs" />
     <Compile Include="Leetcode\234_Palindrome Linked List.cs" />
     <Compile Include="Leetcode\235_LowestCommonAncestorBinarySearchTree.cs" />
@@ -151,10 +201,13 @@
     <Compile Include="Leetcode\9_Palindrome Number.cs" />
     <Compile Include="Leetcode\114_Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Leetcode\1_TwoSums.cs" />
+    <Compile Include="Leetcode\Array\153_FindMinimumInRotatedSortedArray.cs" />
     <Compile Include="Leetcode\Array\168_Excel Sheet Column Title.cs" />
+    <Compile Include="Leetcode\Array\16_3Sum.cs" />
     <Compile Include="Leetcode\Array\283_Move Zeroes.cs" />
     <Compile Include="Leetcode\Array\303_Range Sum Query - Immutable.cs" />
     <Compile Include="Leetcode\Array\338_Counting Bits.cs" />
+    <Compile Include="Leetcode\Array\33_Search in Rotated Sorted Array.cs" />
     <Compile Include="Leetcode\Array\34_Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="Leetcode\Array\670_Maximum Swap.cs" />
     <Compile Include="Leetcode\Array\674_LongestContinuousIncreasingSubsequence.cs" />
@@ -164,6 +217,8 @@
     <Compile Include="Leetcode\BackTracking\102_Binary_Tree_Level_Order_Traversal.cs" />
     <Compile Include="Leetcode\BackTracking\216_Combination_Sum_III.cs" />
     <Compile Include="Leetcode\BackTracking\784_Letter_Case_Permutation.cs" />
+    <Compile Include="Leetcode\BFS\429_N_Arr_Tree_LevelOrder.cs" />
+    <Compile Include="Leetcode\BFS\513_FindBottomLeftTreeValue.cs" />
     <Compile Include="Leetcode\DFS\112_PathSum.cs" />
     <Compile Include="Leetcode\DP\198_HouseRobber.cs" />
     <Compile Include="Leetcode\DP\322_Coin Change.cs" />
@@ -174,12 +229,16 @@
     <Compile Include="Leetcode\DP\64_Minimum Path Sum.cs" />
     <Compile Include="Leetcode\DP\70_Climbing Stairs.cs" />
     <Compile Include="Leetcode\DP\712_Minimum ASCII Delete Sum for Two Strings.cs" />
+    <Compile Include="Leetcode\JsonConverter.cs" />
     <Compile Include="Leetcode\Pramp\Busiest Time in The Mall.cs" />
     <Compile Include="Leetcode\Pramp\DecryptMessage.cs" />
+    <Compile Include="Leetcode\Pramp\IslandCount.cs" />
     <Compile Include="Leetcode\Pramp\Pairs with Specific Differences.cs" />
+    <Compile Include="Leetcode\Pramp\SentenceReverse.cs" />
     <Compile Include="Leetcode\Pramp\TimePlanner.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
     <Compile Include="Leetcode\TicTacToe.cs" />
+    <Compile Include="Leetcode\_929_UniqueEmailAddresses.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\FirstNonrepeatedCharacter.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\RemoveSpecifiedCharacters.cs" />
     <Compile Include="ProgrammingInterviewExposed\ArraysAndStrings\SpiralMatrix.cs" />
@@ -205,7 +264,6 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="HackerRank\Extra Practice\" />
-    <Folder Include="Leetcode\BFS\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="ProgrammingInterviewExposed\Recursion\" />
   </ItemGroup>
@@ -225,9 +283,11 @@
     <Content Include="SQL\HackerRank\Advanced Joins\Projects.sql" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="bin\Debug\Practice.vshost.exe.manifest" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Release\Practice.csproj.CoreCompileInputs.cache" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

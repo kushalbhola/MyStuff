@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TempProject.BackTracking
+namespace Practice.Leetcode.BackTracking
 {
     class _216_Combination_Sum_III
     {
@@ -35,28 +35,34 @@ namespace TempProject.BackTracking
         }
         public static List<List<int>> permute(int[] nums)
         {
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             List<List<int>> list = new List<List<int>>();
-            permuteHelper(nums, list, new List<int>(), 0);
+            permuteHelper(nums, list, new List<int>());
             return list;
         }
-        public static void permuteHelper(int[] nums, List<List<int>> list, List<int> tempList, int start)
+        public static void permuteHelper(int[] nums, List<List<int>> list, List<int> tempList)
         {
             if (tempList.Count == nums.Length)
-                list.Add(tempList);
-            for (int i = start; i < nums.Length; i++)
+                list.Add(new List<int>(tempList));
+            else
             {
-                tempList.Add(nums[i]);
-                permuteHelper(nums, list, tempList, i + 1);
-                tempList.RemoveAt(tempList.Count - 1);
+                for (int i = 0; i < nums.Length; i++)
+                {
+                    if (tempList.Contains(nums[i]))
+                        continue;
+                    tempList.Add(nums[i]);
+                    permuteHelper(nums, list, tempList);
+                    tempList.RemoveAt(tempList.Count - 1);
 
+                }
             }
+            
         }
 
         public static List<List<int>> subset(int[] nums)
         {
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             subsethelper(list, new List<int>(), nums, 0);
             return list;
         }
@@ -74,7 +80,7 @@ namespace TempProject.BackTracking
         public static List<List<int>> combinationSum(int[] nums, int target)
         {
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             combinationSumHelper(list, new List<int>(), nums, target, 0);
             return list;
 
@@ -97,7 +103,7 @@ namespace TempProject.BackTracking
         public static List<List<int>> combinationSum2(int[] nums, int target)
         {
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             combinationSum2Helper(list, new List<int>(), nums, target, 0);
             return list;
 
@@ -124,7 +130,7 @@ namespace TempProject.BackTracking
         {
             int[] nums3 = Enumerable.Range(1, 9).ToArray();
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums3);
+            System.Array.Sort(nums3);
             CombinationSum3Helper(list, new List<int>(), nums3, target, 0, target);
             return list;
 
@@ -151,7 +157,7 @@ namespace TempProject.BackTracking
         public static int CombinationSum4(int[] nums, int target)
         {
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             CombinationSum4Helper(list, new List<int>(), nums, target, target);
             return list.Count;
 
