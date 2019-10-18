@@ -17,7 +17,13 @@ namespace Practice.Leetcode.DP
                 {0,1,0 },
                 {0,0,0 }
             };
-            int result = a.UniquePathsWithObstacles(grid);
+
+            int[,] grid2 = {
+                                { 0,0},
+                                { 1,1},
+                                {0,0 }
+                           };
+            int result = a.UniquePathsWithObstacles(grid2);
             result = a.UniquePaths2(3, 2);
 
         }

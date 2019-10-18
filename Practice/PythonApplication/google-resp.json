@@ -1,0 +1,1426 @@
+{
+    "reports": [
+        {
+            "columnHeader": {
+                "dimensions": [
+                    "ga:source",
+                    "ga:medium",
+                    "ga:date",
+                    "ga:dimension1",
+                    "ga:dimension2",
+                    "ga:dimension3",
+                    "ga:browser"
+                ],
+                "metricHeader": {
+                    "metricHeaderEntries": [
+                        {
+                            "name": "ga:users",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "ga:sessions",
+                            "type": "INTEGER"
+                        }
+                    ]
+                }
+            },
+            "data": {
+                "maximums": [
+                    {
+                        "values": [
+                            "2",
+                            "1"
+                        ]
+                    }
+                ],
+                "minimums": [
+                    {
+                        "values": [
+                            "1",
+                            "0"
+                        ]
+                    }
+                ],
+                "rowCount": 72,
+                "rows": [
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Critical Illness Add-on \u2014 Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Dental",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Dental Cover",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Drug Coverage",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Spouse",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Long-Term Disability \u2014 Non-Taxable",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Private Medical Insurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190617",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Dental",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Group Life Assurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Private Medical Insurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Group Life Assurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Dental",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Dental Cover",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Group Inpatient",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Group Life Assurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Group Term Life",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "1"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Private Medical Insurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190618",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190619",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Private Medical Insurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Critical Illness Add-on \u2014 Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190620",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190621",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190624",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190624",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190624",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Dental",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Group Inpatient",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Group Term Life",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190626",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190626",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190626",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190626",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "(direct)",
+                            "(none)",
+                            "20190626",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance - Child(ren)",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190612",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190617",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190617",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190620",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190620",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190620",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Retirement / Savings",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190620",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Group Term Life",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190621",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Private Medical Insurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190621",
+                            "Not Another Test Exchange",
+                            "Test Organization",
+                            "Group Life Assurance",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190623",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Group Inpatient",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190623",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Group Term Life",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190623",
+                            "Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Health Care",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "dimensions": [
+                            "login.microsoftonline.com",
+                            "referral",
+                            "20190625",
+                            "Another Test Exchange",
+                            "Test Organization",
+                            "Life Insurance Employee",
+                            "Chrome"
+                        ],
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "0"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": [
+                    {
+                        "values": [
+                            "73",
+                            "1"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

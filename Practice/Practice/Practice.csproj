@@ -58,7 +58,7 @@
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
     <StartupObject>Practice.Leetcode.DP._62_Unique_Paths</StartupObject>
     <StartupObject>Practice.Leetcode.BFS._513_FindBottomLeftTreeValue</StartupObject>
-    <StartupObject>Practice.Leetcode._442_Find_All_Duplicates_in_an_Array</StartupObject>
+    <StartupObject>Practice.Leetcode.Strings.Test</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
@@ -127,6 +127,7 @@
     <Compile Include="HackerRank\Algorithms\knapsack_Greedy.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\AlternatingCharacters\Solution.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\BeautifulStrings\Solution.cs" />
+    <Compile Include="HackerRank\Algorithms\Strings\Easy\First.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\LoveMystery.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\MakingAnagrams.cs" />
     <Compile Include="HackerRank\Algorithms\Strings\MarsExploration.cs" />
@@ -169,6 +170,7 @@
     <Compile Include="Leetcode\169_Majority Element.cs" />
     <Compile Include="Leetcode\189_Rotate Array.cs" />
     <Compile Include="Leetcode\18_4Sum.cs" />
+    <Compile Include="Leetcode\19_Remove Nth Node From End of List.cs" />
     <Compile Include="Leetcode\20_Valid Parentheses.cs" />
     <Compile Include="Leetcode\21_MergeTwoSortedList.cs" />
     <Compile Include="Leetcode\229_Majority Element II.cs" />
@@ -191,10 +193,15 @@
     <Compile Include="Leetcode\485_Max Consecutive Ones.cs" />
     <Compile Include="Leetcode\495_Teemo_Attacking.cs" />
     <Compile Include="Leetcode\593_ValidSquare.cs" />
+    <Compile Include="Leetcode\5_LongestPalindromicSubstring.cs" />
     <Compile Include="Leetcode\61_Rotate List.cs" />
     <Compile Include="Leetcode\636_Exclusive Time of Functions.cs" />
     <Compile Include="Leetcode\653_Two Sum IV - Input is a BST.cs" />
     <Compile Include="Leetcode\680_ValidPalindrome2.cs" />
+    <Compile Include="Leetcode\BinarySearchQuestions\167_TwoSum_SortedArray.cs" />
+    <Compile Include="Leetcode\BinarySearchQuestions\350_Intersection_2_Array.cs" />
+    <Compile Include="Leetcode\BinarySearchQuestions\367_ValidPerfectSquare.cs" />
+    <Compile Include="Leetcode\BinarySearchQuestions\704_BinarySearch.cs" />
     <Compile Include="Leetcode\724_Find Pivot Index.cs" />
     <Compile Include="Leetcode\7_Reverse Integer.cs" />
     <Compile Include="Leetcode\872_Leaf-Similar Trees.cs" />
@@ -212,10 +219,13 @@
     <Compile Include="Leetcode\Array\670_Maximum Swap.cs" />
     <Compile Include="Leetcode\Array\674_LongestContinuousIncreasingSubsequence.cs" />
     <Compile Include="Leetcode\Array\88_Merge Sorted Array.CS" />
+    <Compile Include="Leetcode\Array\961_N-Repeated Element in Size 2N Array.cs" />
     <Compile Include="Leetcode\Array\smaller.cs" />
     <Compile Include="Leetcode\Array\SmallestPositiveInteger.cs" />
     <Compile Include="Leetcode\BackTracking\102_Binary_Tree_Level_Order_Traversal.cs" />
+    <Compile Include="Leetcode\BackTracking\17_LetterCombinationsPhoneNumber.cs" />
     <Compile Include="Leetcode\BackTracking\216_Combination_Sum_III.cs" />
+    <Compile Include="Leetcode\BackTracking\22_GenerateParantheses.cs" />
     <Compile Include="Leetcode\BackTracking\784_Letter_Case_Permutation.cs" />
     <Compile Include="Leetcode\BFS\429_N_Arr_Tree_LevelOrder.cs" />
     <Compile Include="Leetcode\BFS\513_FindBottomLeftTreeValue.cs" />
@@ -226,6 +236,7 @@
     <Compile Include="Leetcode\DP\518_Coin Change 2.cs" />
     <Compile Include="Leetcode\DP\53_Maximum Subarray.cs" />
     <Compile Include="Leetcode\DP\62_Unique Paths.cs" />
+    <Compile Include="Leetcode\DP\63_UniquePaths.cs" />
     <Compile Include="Leetcode\DP\64_Minimum Path Sum.cs" />
     <Compile Include="Leetcode\DP\70_Climbing Stairs.cs" />
     <Compile Include="Leetcode\DP\712_Minimum ASCII Delete Sum for Two Strings.cs" />
@@ -236,6 +247,15 @@
     <Compile Include="Leetcode\Pramp\Pairs with Specific Differences.cs" />
     <Compile Include="Leetcode\Pramp\SentenceReverse.cs" />
     <Compile Include="Leetcode\Pramp\TimePlanner.cs" />
+    <Compile Include="Leetcode\SlidingWindow\1004_MaxConsecutiveOnes.cs" />
+    <Compile Include="Leetcode\SlidingWindow\424_LongestRepeatingCharacterReplacement.cs" />
+    <Compile Include="Leetcode\Strings\1021.cs" />
+    <Compile Include="Leetcode\Strings\1221.cs" />
+    <Compile Include="Leetcode\Strings\557_ReverseWords.cs" />
+    <Compile Include="Leetcode\Strings\804_UniqueMorseCode.cs" />
+    <Compile Include="Leetcode\Strings\824_Goatlatin.cs" />
+    <Compile Include="Leetcode\Strings\917.cs" />
+    <Compile Include="Leetcode\Strings\Test.cs" />
     <Compile Include="Leetcode\TestTime.cs" />
     <Compile Include="Leetcode\TicTacToe.cs" />
     <Compile Include="Leetcode\_929_UniqueEmailAddresses.cs" />

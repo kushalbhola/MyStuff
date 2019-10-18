@@ -1,0 +1,238 @@
+--1. List employees (names) who have a bigger salary than their boss
+select * from #employee e inner join #employee b on e.boss_id = b.employee_id where b.salary < e.Salary
+
+--2. List employees who have the biggest salary in their departments
+select *, RANK() over (partition by department_id order by salary desc) from #employee
+
+--3. List departments that have less than 3 people in it
+select department_id, count(employee_id) nums from #employee group by department_id having count(employee_id) <3
+
+--4. List all departments along with the number of people there (tricky - people often do an "inner join" leaving out empty departments)
+
+select d.department_name, count(e.employee_id) from departments d left join #employee e on d.department_id = e.department_id group by d.department_name
+
+--5. List employees that don't have a boss in the same department
+select * from #employee e inner join #employee b on e.boss_id = b.employee_id
+where e.department_id <> b.department_id
+
+--6. List all departments along with the total salary there
+select department_id, sum(salary) from #employee group by department_id
+
+}
+
+LeetCode Locked Problems:
+/*1. Highest Grade For Each Student
+https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/highest-grade-for-each-student
+Write a SQL query to find the highest grade with its corresponding course for each student. In case of a tie, you should find the course with the smallest course_id. The output must be sorted by increasing student_id.
+
+*/
+select student_id, course_id, MAX(grade) from Enrollments group by student_id, course_id
+
+/*
+2. Leetcode: Game Play Analysis I
+https://code.dennyzhang.com/game-play-analysis-i
+*/
+select *, FIRST_VALUE(event_date) over (partition by player_id order by event_date) from Activity
+select player_id, MIN(event_date) first_Vale from Activity group by player_id
+
+/*
+3. Leetcode: Game Play Analysis II
+https://leetcode.com/problems/game-play-analysis-ii
+*/
+with cte as (select player_id, MIN(event_date) first_Vale from Activity group by player_id, device_id)
+select * from Activity a inner join cte c ON a.player_id = c.player_id and a.event_date = b.first_Vale
+
+/*
+4. Leetcode: Game Play Analysis III
+https://leetcode.com/problems/game-play-analysis-iii
+Running total
+*/
+select player_id, event_date, SUM(games_played) over (partition by player_id order by event_date) games_played_so_far  from Activity
+
+/*
+5. Leetcode: Game Play Analysis IV
+https://leetcode.com/problems/game-play-analysis-iv
+Running total
+*/
+select 
+cast(count(player_id) as float) /
+cast((select count(distinct player_id) from Activity)as float)
+from Activity a inner join Activity b ON a.player_id = b.player_id and a.event_date = DATEADD(day, 1, b.event_date)
+
+/*
+6. Managers with at Least 5 Direct Reports
+https://code.dennyzhang.com/managers-with-at-least-5-direct-reports
+*/
+select e2.Name from Employee e1 inner join Employee e2 ON e1.ManagerID = e2.ID
+group by e2.Name
+having count(e1.ID) >= 5
+
+/*
+6. Winning Candidate
+https://code.dennyzhang.com/winning-candidate
+*/
+select top 1 c.Name, count(v.ID) from Candidate c inner join Vote v ON c.ID = v.candidateID 
+group by c.Name
+order by count(v.ID) desc
+
+/*
+7. Get Highest Answer Rate Question 
+https://nifannn.github.io/2017/10/27/SQL-Notes-Leetcode-578-Get-Highest-Answer-Rate-Question/
+*/
+with total as 
+(select question_id, count(answer_id) nums from survey_log 
+--where answer_id is not null
+group by question_id )
+, answered
+(select question_id, count(answer_id) nums from survey_log 
+--where answer_id is not null
+group by question_id
+)
+select  top 1 a.question_id from total t inner join answered a ON t.question_id = a.question_id
+order by a.nums/t.nums desc
+
+/*
+8.	Find Cumulative Salary of an Employee 
+https://code.dennyzhang.com/find-cumulative-salary-of-an-employee
+*/
+with cte as 
+(select ID, max(month) maxMonth from #Employee2 b group by ID)
+
+select a.ID, a.Month, SUM(a.Salary) over (partition by a.ID order by a.Month ) 
+from #Employee2 a inner join cte ON a.ID = cte.ID
+and a.Month <> cte.maxMonth
+order by a.ID, a.Month desc
+
+/*
+9.	Leetcode: Product Sales Analysis I
+https://code.dennyzhang.com/find-cumulative-salary-of-an-employee
+*/
+select p.product_name,s.year, s.price from #Sales s inner join #Product p on s.product_id = p.product_id
+
+/*
+10.	Leetcode: Product Sales Analysis II
+https://code.dennyzhang.com/product-sales-analysis-ii
+*/
+select product_id, SUM(quantity) total_quantity from #Sales group by product_id
+
+/*
+11.	Leetcode: Product Sales Analysis III
+https://code.dennyzhang.com/product-sales-analysis-iii
+*/
+with cte as 
+(select product_id, MIN(Year) MinYear from #Sales group by product_id)
+select s.product_id, c.MinYear as FirstYear, s.quantity, s.price
+from #Sales s inner join cte c ON s.product_id = c.product_id and s.year= c.MinYear
+
+/*
+11.	Leetcode: Unpopular Books
+https://code.dennyzhang.com/unpopular-books
+*/
+with cte as 
+(select book_id from Books DATEDIFF(day, getDate(), available_from) > 30
+select b.book_id, b.Name 
+from Books b inner join Orders o On b.book_id = o.book_id
+inner join cte c On b.book_id <> c.book_id
+where YEAR(getDate()) = 2018
+group by b.book_id, b.name
+having count(o.order_id) < 10
+
+/*
+12.
+https://code.dennyzhang.com/project-employees-i
+*/
+select e.project_id, CAST(AVG(e.experience_years) as decimal(5,2)) as average_years 
+from Project p inner join Employee e ON e.employee_id = p.employee_id
+group by e.project_id
+
+/*
+13.
+https://code.dennyzhang.com/project-employees-ii
+*/
+select top 1 project_id
+from project 
+where employee_id is not null
+group by project_id
+order by count(employee_id) desc
+
+/*
+14.
+https://code.dennyzhang.com/project-employees-iii
+*/
+select e.project_id, MAX(e.experience_years )
+from employees e inner join projects p On e.employee_id = p.employee_id
+group by e.project_id
+
+
+with cte as 
+(
+select e.project_id, RANK() over (partition by p.project_id over e.experience_years desc) rnk
+from employees e inner join projects p On e.employee_id = p.employee_id
+)
+select * from cte where rnk = 1;
+
+/*
+15.
+https://code.dennyzhang.com/sales-analysis-i
+*/
+with cte as 
+(select seller_id, SUM(price) totalPrice
+from Sales 
+group by seller_id
+--order by 2 desc
+)
+select seller_id from cte where totalPrice = (select MAX(totalPrice) from cte)
+
+/*
+16.
+https://code.dennyzhang.com/sales-analysis-ii
+*/
+select *
+from product p inner join sales s on p.product_id = s.product_id
+where p.product_name = 'S8' and p.product_name <> 'iphone'
+
+/*
+17.
+https://code.dennyzhang.com/product-sales-analysis-iii
+*/
+with cte as
+(select product_id, MIN(YEAR) firstYear from Sales 
+group by product_id)
+select s.product_id, s.year, s.quantity, s.price 
+from Sales s inner join cte c on s.product_id = c.product_id
+where 
+s.Year = c.Year
+
+/*
+18.
+https://code.dennyzhang.com/reported-posts
+*/
+select extra, count(*)
+from Actions 
+where DATEDIFF(day, getDate(), action_date ) = 1 and action = 'report'
+group by extra
+
+/*
+19.
+2.given table sales (sale_id, promotion_id, sale_amount, other columns), find % of how sales with promotions ( promotion_id is null) are doing in comparison to all sales.https://code.dennyzhang.com/reported-posts
+*/
+--get sales with promotion_id
+with cte as 
+(select * from sales where promotion_id is not null)
+select cast(((select count(*) from sales where promotion_id is not null)/count(*))*100 as decimal(10,2)) from sales
+
+
+Fcebook Questions:
+Schema
+Table1: Sales(promotion_id, units_sold, order_id), promotions(promotion_id, cost, media_type), Products, Product_Classes
+1.: Find the promotion which had single media type, in the schema the media type column had data like 'Radio, NewPaper'. So they wanted all the single media_type i.e. 
+	everything witout ',' so I basically used like 
+2. percentage of sales made with promotion to total sales
+3. total of unit_sole with promotions , total of unit_sole without promotion, total unit_sole grouped by product_classes. I created 3 cte's
+
+Coding: 
+1. 2 strings are given str1 and str2, find all the words form str1 which are not in str2 and vice-versa
+2. Count occurenece of a letter in a word
+3. Given an integer array which contains null values, replace the null value with previous non-null value
+	input = {1, null, 2, 4, null, null, 8}
+	output = {1, 1, 2, 4, 4, 4, 8}

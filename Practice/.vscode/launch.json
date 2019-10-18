@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringPalindrome",
+            "request": "launch",
+            "mainClass": "Leetcode.LongestSubstringPalindrome",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxConsecutiveOnes",
+            "request": "launch",
+            "mainClass": "Leetcode.MaxConsecutiveOnes",
+            "projectName": "Practice_cf17f854"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MinimumPathSum",
             "request": "launch",
             "mainClass": "Leetcode.MinimumPathSum",

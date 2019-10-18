@@ -10,9 +10,11 @@ namespace Practice.Leetcode
         public static void Main(String[] args)
         {
             int[] nums = { 1, 3};
-            int target = 3;
+            int target = 1;
             int result = SearchInsert(nums, target);
             result = SearchInsert2(nums, target);
+            int t = 15 / 2;
+            result = SearchInsert3(nums, target);
         }
         public static int SearchInsert(int[] nums, int target)
         {
@@ -66,6 +68,31 @@ namespace Practice.Leetcode
                 return nums.Length - 1;
             else
                 return nums.Length ;
+        }
+        
+        //Attempt 2
+        public static int SearchInsert3 (int[] nums, int target)
+        {
+            int start = 0;
+            int end = nums.Length;
+            while (end >= start)
+            {
+                int mid = start + (end-start)/2;
+                if (nums[mid] == target)
+                    return mid;
+                if (target > nums[mid])
+                    start = mid + 1;
+                if (target < nums[mid])
+                    end = mid - 1;
+            }
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] > target)
+                {
+                    return i;
+                }
+            }
+            return nums.Length;
         }
     }
 }

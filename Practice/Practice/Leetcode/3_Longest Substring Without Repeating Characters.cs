@@ -12,7 +12,7 @@ namespace Practice.Leetcode
             string input = "abcabcbb";
             int result = LengthOfLongestSubstring(input);
             _3_Longest_Substring_Without_Repeating_Characters a = new _3_Longest_Substring_Without_Repeating_Characters();
-            result = a.LengthOfLongestSubstring2(input);
+            result = a.LengthOfLongestSubstring3(input);
         }
         public static int LengthOfLongestSubstring(string s)
         {
@@ -54,6 +54,26 @@ namespace Practice.Leetcode
                 ans = Math.Max(ans, fast - slow);
             }
             return ans;
+        }
+        public int LengthOfLongestSubstring3(string s)
+        {
+            HashSet<char> hash = new HashSet<char>();
+            char[] ch = s.ToCharArray();
+            int start = 0; int end = 0;
+            int maxLength = 0;
+            while (start <= end)
+            {
+                if(!hash.Contains(ch[end]))
+                {
+                    hash.Add(ch[end++]);
+                }
+                else
+                {
+                    hash.Remove(ch[start++]);
+                }
+                maxLength = Math.Max(maxLength, end - start);
+            }
+            return maxLength;
         }
     }
 }

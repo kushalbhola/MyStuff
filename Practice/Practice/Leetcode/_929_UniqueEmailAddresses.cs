@@ -30,6 +30,7 @@ namespace Practice.Leetcode
             list.Add(11);
             list.Add(21);
             int test3 = list.OrderByDescending(m => m).FirstOrDefault();
+            
 
 
             string[,] newArray =  { { "A", "B" }, { "A", "C" }, { "B", "D" }, { "B", "C"}, { "A", "D"} };
@@ -41,6 +42,8 @@ namespace Practice.Leetcode
             Console.WriteLine(a.ValidateIP("11.121.121.878"));
             Console.WriteLine(a.ValidateIP("11.121.121.23"));
             Console.WriteLine(a.ValidateIP("11.121.121.878.23232"));
+            string input = "Let's take LeetCode contest";
+            string output = a.ReverseWords(input);
 
         }
         static void printList(List<int> list)
@@ -105,6 +108,22 @@ namespace Practice.Leetcode
 
             }
             return finalList.Distinct().Count();
+        }
+        //557_Reverse Words in a String III
+        //https://leetcode.com/problems/reverse-words-in-a-string-iii/
+        public string ReverseWords(string s)
+        {
+            char[] ch = s.ToCharArray();
+            int start = 0;
+            int end = ch.Length - 1;
+            while (end > start)
+            {
+                char test = ch[start];
+                ch[start] = ch[end];
+                ch[end] = test;
+                start++; end--;
+            }
+            return ch.ToString();
         }
     }
 }
