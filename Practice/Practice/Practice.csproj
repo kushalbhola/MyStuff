@@ -58,7 +58,7 @@
     <StartupObject>Practice.ProgrammingInterviewExposed.ArraysAndStrings.SpiralMatrix</StartupObject>
     <StartupObject>Practice.Leetcode.DP._62_Unique_Paths</StartupObject>
     <StartupObject>Practice.Leetcode.BFS._513_FindBottomLeftTreeValue</StartupObject>
-    <StartupObject>Practice.Leetcode.Strings.Test</StartupObject>
+    <StartupObject>Practice.Leetcode.BinarySearchQuestions._167_TwoSum_SortedArray</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">

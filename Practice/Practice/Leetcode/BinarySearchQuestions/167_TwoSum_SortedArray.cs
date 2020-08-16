@@ -10,9 +10,9 @@ namespace Practice.Leetcode.BinarySearchQuestions
     {
         public static void Main(String[] args)
         {
-            int[] nums = { 1,2,3,4,4,9,56,90 };
-            int target = 8;
-            int[] result = TwoSum2(nums, target);
+            int[] nums = {-1,0 };
+            int target = -1;
+            int[] result = TwoSum(nums, target);
         }
         public static int[] TwoSum(int[] numbers, int target)
         {

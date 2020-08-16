@@ -9,7 +9,7 @@ namespace Practice.Leetcode.Array
     {
         public static void Main(String[] args)
         {
-            int[] nums = {0,1};
+            int[] nums = { 0, 1, 0, 3, 12 };
             MoveZeroes(nums);
         }
         public static void MoveZeroes(int[] nums)

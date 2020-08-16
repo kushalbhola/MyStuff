@@ -19,7 +19,7 @@ where e.department_id <> b.department_id
 select department_id, sum(salary) from #employee group by department_id
 
 }
-
+992X-AWLTTW-YNF4AP
 LeetCode Locked Problems:
 /*1. Highest Grade For Each Student
 https://github.com/dennyzhang/code.dennyzhang.com/tree/master/problems/highest-grade-for-each-student
@@ -32,8 +32,7 @@ select student_id, course_id, MAX(grade) from Enrollments group by student_id, c
 2. Leetcode: Game Play Analysis I
 https://code.dennyzhang.com/game-play-analysis-i
 */
-select *, FIRST_VALUE(event_date) over (partition by player_id order by event_date) from Activity
-select player_id, MIN(event_date) first_Vale from Activity group by player_id
+select player_id , min(event_date) first_login from activity group by player_id
 
 /*
 3. Leetcode: Game Play Analysis II
@@ -63,10 +62,19 @@ from Activity a inner join Activity b ON a.player_id = b.player_id and a.event_d
 6. Managers with at Least 5 Direct Reports
 https://code.dennyzhang.com/managers-with-at-least-5-direct-reports
 */
-select e2.Name from Employee e1 inner join Employee e2 ON e1.ManagerID = e2.ID
-group by e2.Name
-having count(e1.ID) >= 5
+create table #Employee 
+(id int, name varchar(20), department varchar(20), ManagerId int)
 
+insert into #Employee values (101, 'John', 'A', null)
+insert into #Employee values (102, 'Dan', 'A', 101)
+insert into #Employee values (103, 'James', 'A', 101)
+insert into #Employee values (104, 'Amy', 'A', 101)
+insert into #Employee values (105, 'Anne', 'A', 101)
+insert into #Employee values (106, 'Ron', 'A', 101)
+
+select m.name from #Employee e inner join #Employee m on e.ManagerId = m.id
+group by m.name
+having count(e.id) >= 5
 /*
 6. Winning Candidate
 https://code.dennyzhang.com/winning-candidate
@@ -82,7 +90,8 @@ https://nifannn.github.io/2017/10/27/SQL-Notes-Leetcode-578-Get-Highest-Answer-R
 with total as 
 (select question_id, count(answer_id) nums from survey_log 
 --where answer_id is not null
-group by question_id )
+group by question_id 
+)
 , answered
 (select question_id, count(answer_id) nums from survey_log 
 --where answer_id is not null
@@ -149,11 +158,15 @@ group by e.project_id
 13.
 https://code.dennyzhang.com/project-employees-ii
 */
-select top 1 project_id
-from project 
-where employee_id is not null
+with temp as 
+(select  project_id, count(employee_id) nums from Project 
 group by project_id
-order by count(employee_id) desc
+)
+, temp2 as 
+(select *, RANK() over (order by nums desc) as rnk
+from temp )
+select project_id from temp2 where rnk = 1
+
 
 /*
 14.
@@ -230,9 +243,232 @@ Table1: Sales(promotion_id, units_sold, order_id), promotions(promotion_id, cost
 2. percentage of sales made with promotion to total sales
 3. total of unit_sole with promotions , total of unit_sole without promotion, total unit_sole grouped by product_classes. I created 3 cte's
 
+Imp Coding Question:
+1. Flatten a dictionary
+
 Coding: 
 1. 2 strings are given str1 and str2, find all the words form str1 which are not in str2 and vice-versa
 2. Count occurenece of a letter in a word
 3. Given an integer array which contains null values, replace the null value with previous non-null value
 	input = {1, null, 2, 4, null, null, 8}
 	output = {1, 1, 2, 4, 4, 4, 8}
+	
+
+prefered location: ny(1), menlo park(2)
+
+Interview: Continue practice on postgres, efficiency of code in sql, 
+c# approach was logical and clear 
+
+4.30 hrs long 3 technical, all are white board interview
+practice: data modelling + etl pipelines, C# and sql  learn to build pipelines from scratch
+
+each of technical interview will have product analytics portion , so go thru and understand facebook and instagram as products.
+example: instagram search is success, or posts 
+
+think about hypothsis testing
+review product manager questions, from glassdoor and quora
+blend of data science + product manger + data engineer 
+ 
+ go to medium > product matrix + product performance and product api, matrix funnel (these are keywords for medium_)
+ 
+ technical 1: data modelling , sql and product analytics question 
+ technical 2: technical interview etl 
+ technical 3: technical interview etl 
+ technical 4: ownership + what is yourship plans
+
+
+Fact: Violations
+Dimensions: Inspection, Employee, Establishment, Date
+
+Question: 
+1. Is ETL gonna be the focus of the interview
+2. do I have to practice leetcode
+3. concepts like kafka, hive in the interview?
+
+-----
+
+4 interviews
+Recruiter: Adrian
+travel Cordinator: Kaila
+- majority of time it will be writing on white board
+- Coding question will be based towards build pipeline > So coding language is Python
+- 3 tech, and 1 non -tech (ownership) + lunch(discussion) [No feedback submitted on lunch interview]
+- Product team: Pick your team after you get hired. NY office team > Instagram 
+- Raw data and making it more structured is the role
+
+- Ownership: 30 min, question about past experience, drove intiative, had a collaborative initiative
+sample: Tell a story
+1. Why do you wanna join facebook. [dont say it is a large company or something like that, related to facebook mission like bring communities together, like when I grew up outside 
+	mumbai, I lost touch with a lot of my friends and now I am connected with them using whatsapp. That is why I wanna join facebook]
+2. If you were to join FB, what will success look like in 90 days? Should like SMART goal: something which can be measured and tracked
+3. There is always more work, then you can get done, how do you priorituze your day.
+4. Tell me about a time when you taught yourslef tool/.tech you are proud of?
+5. How do you define the role of data engineering and why is it for you?
+
+Tech: Product sense, sql, coding, data modelling, etl [this is what they will test me on in tech interview]
+
+- Tech1 [Active Users]: User Engagement matrix, DAU (daily active users), MAU. . They will design 
+	the data model, Then they will give matrix. 
+	How will you fix bad data, 
+	15 min: Product sense scenario, the able to answwer these kind of question and cannot answer some other 
+	45 min: Technical portion ETL [how to calculate matrix], sql[batch process for daily prep] and coding[streaming UDF, custom reducer steps].
+
+- Tech2 [Content Creation Funnel > Streaming of events]: Start with product sense, how user can create content on FB. SQL portion + Coding portion and it will have data visualization portion
+
+Sample question: I am user and I want to upload photo, how do I track this activity.
+SQL portion: 
+Coding portion: similar to tech1
+For visualization I would be doing something in tableau by doing this this this
+Check our how different types of data can be visualize  like class variable, when to use pie chart, and when to use histogram
+
+Tech3 [Data Modelling]: Start with product sense question > design a data mart > question sql (1 hr)
+Product Sense: You developing an app, app could be facebook or netflix, uber/lyft [this will be it]
+
+
+Pre for Product Sense: 
+hint: It will be about fb product, netflix, or uber/lyft
+
+Example: Zynga
+Imaging you are trying to help zynga business, how will tracking most imp matrix 
+check out the financial slides to check key matrix @ here. Do the same for FAANG
+https://investor.zynga.com/static-files/e9808661-ba25-4b3a-ad40-ac9a0f6a7dfc
+
+Prep on data visualization:
+How different companies are using visualization.
+Goal/actual, trending line, basically review company financial representation and see how they are visualize different key matrix.
+
+Prep on Data Modelling: 
+the idea is brainstorm to forma  data mart to answer the question we talked about in the product sense. 
+Basically crete star schema, fact and dimension > think about to build optimized fashion. 
+
+Game Performance
+Game/players
+
+Prep for ETL, SQL and Coding:
+ETL: You will be desgining batch or realtime, design source or target, and how to etl from source to target.
+source example: logging table that capture users action 
+target table: aggregate table or data object that capture a more specific use case
+You will be asked to write specific transformations, in sql or python. 
+You will determine the choice of technology.
+Datasets will be very large so consider this all the time, so consider this, basically have staging table 
+
+Zynga example, On average how many games did ppl polay before they make a purchase. 
+You will tell me how the raw data will be stored before . So you should tell how to do this for zynga by design etl and targets.
+Business casuals, jeans, 
+
+ALWAYS THINK OUTLOUD
+[Think of grand schema how to make facebook products better]
+Level: Senior role
+	
+Q: Track how many people are using instagram live video feature?
+
+
+Material: 
+https://github.com/xinlutu2/Research_Data_Pipeline
+https://github.com/MicrosoftLearning/DP-200-Implementing-an-Azure-Data-Solution/tree/master/instructions
+https://www.youtube.com/channel/UC4EX8zLiBUalk704IX_zu1Q/search?query=etl
+https://www.youtube.com/watch?v=sLhInuwdwcc&t=698s[V good]
+https://github.com/hasbrain/data-engineer-roadmap [v v good]
+https://docs.google.com/spreadsheets/d/1GOO4s1NcxCR8a44F0XnsErz5rYDxNbHAHznu4pJMRkw/edit#gid=0 [learn about uber/lyft schema]
+
+Big Data ETL:  (do this using azure databricks)
+https://github.com/NFLX-WIBD/WIBD-Workshops-2018/blob/master/Data%20Engineering/WDI/notebooks/Data%20Engineering%20-%20Part%202.ipynb
+dataset: https://www.kaggle.com/worldbank/world-development-indicators
+
+Lyft Analyis:
+https://github.com/prithvikannan/lyft-data-challenge
+
+Stock DWH example: https://github.com/dharm18/stock-datawarehouse
+US govt projects: https://gsa.github.io/github-federal-stats/
+dataquest: https://github.com/dataquestio/solutions
+
+Interview Experience:
+https://leetcode.com/discuss/interview-experience/337508/Facebook-or-Data-Engineer-or-SF-or-Jul-2019-Reject
+
+Sample Database for Instagram:
+https://github.com/Vheissu/Open-Source-Database-Schemas
+
+MySQ L Analytical queries: https://www.richardtwatson.com/dm6e/Reader/ClassicModels.html
+
+VERY IMP: https://github.com/kushalbhola/Beyond-LeetCode-SQL
+VERY IMP Interview Structure: https://www.glassdoor.com/Interview/Facebook-Data-Engineer-Interview-Questions-EI_IE40772.0,8_KO9,22_IP4.htm
+
+WEB: 32
+Total 90 machine in cluster
+
+Glassdoor:
+1. Given this data calculate this KPI
+How would you design the data model for this scenario  
+The in person interview will consist of 3 problem solving interviews, in my experience you will be given a scenario of a data engineering problem (i.e how to be identify the metrics for performance for this specific feature) and you will be expected to write SQL and actual code for the context of the problem itself.
+
+2. The question was about updating metrics (I defined the metrics to answer earlier question) for a fb module as stream of new data is coming in. As interviewer point out I was on right track having a session id and user id to de-dup same user activity, but it was not enough i guess.
+
+3. Flatten a nested dictionary?? ( this was the hardest question in coder pad questions )  
+4. describe a situation where you did not agree with the stakeholders and how did you handle? 
+5. You have a 2-D array of friends like [[A,B],[A,C],[B,D],[B,C],[R,M], [S],[P], [A]]
+Write a function that creates a dictionary of how many friends each person has. People can have 0 to many friends. However, there won't be repeat relationships like [A,B] and [B,A] and neither will there be more than 2 people in a relationship 
+
+6. 
+SQL:
+1. given table products(product_id, brand_name,product_name, product_price), find brand_names with avg price > 3 and having more then 5 products
+2.given table sales (sale_id, promotion_id, sale_amount, other columns), find % of how sales with promotions ( promotion_id is null) are doing in comparison to all sales.
+Coding(Java):
+1. find avg word length in a sentence
+2. ip address validation
+3. Friends problem [[A,B], [B,D],[E]...] ( List of lists);  
+
+Manager want to analyze the how the promotions on certain products are performing.find how the the percent of promoted sales?  
+get the top3 product class_id by the total sales.  
+
+7.
+Prepare question to ask
+
+8.
+The onsite interview is what went a little weird (and why I am not giving any rating to this interview). The onsite interviews are basically case-studies, where you are given an application (ride-share app, online gaming, social network app, etc.). They expect you to first note the different metrics to check if the business is doing well and then create a Dimensional Model for that business. After that, you will be given tasks which will require SQL and/or Python coding. Asking clarifying questions is encouraged on paper and the whole interview is said to be a "collaborative process". And that is what I had in mind when I was answering my interviewers. But it seems that my clarifying questions were counted against me by the interviewers. Despite that fact that I was able to answer all of the questions and had a great discussion in all of my interviews, I was sent a rejection email the next week.
+
+9.
+given some sample web UI log data, write a SQL query to answer various questions  
+10.given some sample web UI log data, write a python algorithm to answer various questions  
+11. 
+Given a multi-step product feature, write SQL to see how well this feature is doing (loading times, step completion %). Then use Python to constantly update average step time as new values stream in, given that there are too many to store in memory. 
+
+HelloWorld@123 
+
+Question asked in interview:
+1. a graph was given with a peak and a valley, he asked me you are noticing this kind of graph in the DAU in facebook. What could be reasons for this behavior
+Reponse: I gave him 4- 6 responses, which wer 1. maybe the way we are collecting logs from web server are wrong and lets say if we collect from 1000 webserver in this case we are only looking at 500 servers 2. maybe a lot of people from a regio (say India election) are logging to fb to get news.
+
+logs table
+U_is 	login_date	last_login_date		first_login_date
+121		11/25		11/25				11/25				[New User]
+131		11/25		11/26				11/20				[recurring]
+141		11/15		11/14				11/12				[Churn]
+
+Using the above table insert/update entries in to a cumulative table and flag them as newUser, RecurringUser, and ChurnUser. 
+Notice recurring is when last_logi + 1 = login_date
+[There was one more category of users which I do not remember now]
+
+2. The facebook content creation is as follows 1. Select post button on fb. 2. Select the pic which you wanna post, 3. write post about it, 4. Hit post. So this is the process of fb 
+posting. We need to increase the pics posting process, and enable people to share more pics on fb. 
+What metrics will you track for the above problem
+1. NUmber of active users posting pics every day, every hour. 
+I gave him some 10-15 responses. 
+
+given a table like below which has time taken at each step 
+
+UID		Step	TimeStamp
+121		01		02019-11-25 17:58:24
+121		02		2019-11-25 17:58:26
+121		03		2019-11-25 17:58:29
+121		04		2019-11-25 17:58:31
+Find total time and average time par step in sql
+Then he changed the question
+UID		Step	TimeStamp
+121		01		02019-11-25 17:58:24
+121		02		2019-11-25 17:58:26
+121		03		2019-11-25 17:58:29
+121		02		2019-11-25 17:58:32
+121		03		2019-11-25 17:58:33
+121		04		2019-11-25 17:58:38
+
+So after getting to step 3 the user went back to step 2 and redid step3 and finally step 4. In this case 
