@@ -1,7 +1,6 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict = {}
-        dict = {}
         for i,v in enumerate(nums):
             if(v not in dict):
                 dict[nums[i]] = i
@@ -11,6 +10,11 @@ class Solution:
             if(currtarget in dict and i != dict[target - nums[i]]):
                 return [i, dict[target - nums[i]]]
         return []
+    def main():
+        
+
+if __name__ == '__main__':
+    twoSum()
 
 
 
